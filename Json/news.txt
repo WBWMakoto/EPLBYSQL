@@ -1,0 +1,1 @@
+[{"NewsTitle":"Title1","NewsContent":"Content1","Time":"2022-07-31T10:00:00Z","Author":"Author1"},{"NewsTitle":"Title2","NewsContent":"Content2","Time":"2022-08-06T15:30:00Z","Author":"Author2"}]

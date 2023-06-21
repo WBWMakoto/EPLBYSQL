@@ -1,0 +1,1 @@
+[{"RankNumber":1,"TeamName":"Team1","TotalMatches":10,"Wins":5,"Draws":3,"Losses":2,"GoalsScored":20,"GoalsConceded":10,"GoalDifference":10,"TotalPoints":18},{"RankNumber":2,"TeamName":"Team2","TotalMatches":9,"Wins":4,"Draws":3,"Losses":2,"GoalsScored":15,"GoalsConceded":12,"GoalDifference":3,"TotalPoints":15}]

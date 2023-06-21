@@ -1,4 +1,4 @@
-
+﻿
 
 -- Create the database
 CREATE DATABASE EPL;
@@ -71,7 +71,7 @@ CREATE TABLE HistoricalAchievement (
 DECLARE @matchesJson NVARCHAR(MAX);
 
 SELECT @matchesJson = BulkColumn
-FROM OPENROWSET(BULK 'D:\Downloads going here\SQL project\message.txt', SINGLE_CLOB) AS j;
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\matches.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO Matches (MatchNumber, RoundNumber, DateUtc, Location, HomeTeam, AwayTeam, [Group], HomeTeamScore, AwayTeamScore)
 SELECT MatchNumber, RoundNumber, CONVERT(DATETIME, REPLACE(DateUtc, 'Z', ''), 120), Location, HomeTeam, AwayTeam, [Group], HomeTeamScore, AwayTeamScore
@@ -86,9 +86,18 @@ WITH (
   [Group] VARCHAR(255) '$.Group',
   HomeTeamScore INT '$.HomeTeamScore',
   AwayTeamScore INT '$.AwayTeamScore'
-);
+)
+ORDER BY MatchNumber ASC;
 
-DECLARE @newsJson NVARCHAR(MAX) = N'[{"NewsTitle":"Title1","NewsContent":"Content1","Time":"2022-07-31T10:00:00Z","Author":"Author1"},{"NewsTitle":"Title2","NewsContent":"Content2","Time":"2022-08-06T15:30:00Z","Author":"Author2"}]';
+
+
+
+
+
+DECLARE @newsJson NVARCHAR(MAX);
+
+SELECT @newsJson = BulkColumn
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\news.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO News (NewsTitle, NewsContent, Time, Author)
 SELECT NewsTitle, NewsContent, CONVERT(DATETIME, REPLACE(Time, 'Z', ''), 126), Author
@@ -100,7 +109,10 @@ WITH (
   Author VARCHAR(255) '$.Author'
 );
 
-DECLARE @clubLeaderboardJson NVARCHAR(MAX) = N'[{"RankNumber":1,"TeamName":"Team1","TotalMatches":10,"Wins":5,"Draws":3,"Losses":2,"GoalsScored":20,"GoalsConceded":10,"GoalDifference":10,"TotalPoints":18},{"RankNumber":2,"TeamName":"Team2","TotalMatches":9,"Wins":4,"Draws":3,"Losses":2,"GoalsScored":15,"GoalsConceded":12,"GoalDifference":3,"TotalPoints":15}]';
+DECLARE @clubLeaderboardJson NVARCHAR(MAX);
+
+SELECT @clubLeaderboardJson = BulkColumn
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\clubleaderboard.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO ClubLeaderboard (RankNumber, TeamName, TotalMatches, Wins, Draws, Losses, GoalsScored, GoalsConceded, GoalDifference, TotalPoints)
 SELECT RankNumber, TeamName, TotalMatches, Wins, Draws, Losses, GoalsScored, GoalsConceded, GoalDifference, TotalPoints
@@ -118,7 +130,10 @@ WITH (
   TotalPoints INT '$.TotalPoints'
 );
 
-DECLARE @topGoalsByPlayerJson NVARCHAR(MAX) = N'[{"FootballerName":"Player1","TotalGoals":10,"Club":"Club1"},{"FootballerName":"Player2","TotalGoals":8,"Club":"Club2"}]';
+DECLARE @topGoalsByPlayerJson NVARCHAR(MAX);
+
+SELECT @topGoalsByPlayerJson = BulkColumn
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\topgoalsbyplayer.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO TopGoalsByPlayer (FootballerName, TotalGoals, Club)
 SELECT FootballerName, TotalGoals, Club
@@ -129,7 +144,10 @@ WITH (
   Club VARCHAR(255) '$.Club'
 );
 
-DECLARE @topAssistsByPlayerJson NVARCHAR(MAX) = N'[{"FootballerName":"Player1","TotalAssists":5,"Club":"Club1"},{"FootballerName":"Player2","TotalAssists":3,"Club":"Club2"}]';
+DECLARE @topAssistsByPlayerJson NVARCHAR(MAX);
+
+SELECT @topAssistsByPlayerJson = BulkColumn
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\topassistsbyplayer.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO TopAssistsByPlayer (FootballerName, TotalAssists, Club)
 SELECT FootballerName, TotalAssists, Club
@@ -140,7 +158,10 @@ WITH (
   Club VARCHAR(255) '$.Club'
 );
 
-DECLARE @topPlayerByRedCardsJson NVARCHAR(MAX) = N'[{"FootballerName":"Player1","TotalRedCards":2,"Club":"Club1"},{"FootballerName":"Player2","TotalRedCards":1,"Club":"Club2"}]';
+DECLARE @topPlayerByRedCardsJson NVARCHAR(MAX);
+
+SELECT @topPlayerByRedCardsJson = BulkColumn
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\topplayerbyredcards.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO TopPlayerByRedCards (FootballerName, TotalRedCards, Club)
 SELECT FootballerName, TotalRedCards, Club
@@ -151,7 +172,10 @@ WITH (
   Club VARCHAR(255) '$.Club'
 );
 
-DECLARE @topPlayerByYellowCardsJson NVARCHAR(MAX) = N'[{"FootballerName":"Player1","TotalYellowCards":3,"Club":"Club1"},{"FootballerName":"Player2","TotalYellowCards":2,"Club":"Club2"}]';
+DECLARE @topPlayerByYellowCardsJson NVARCHAR(MAX);
+
+SELECT @topPlayerByYellowCardsJson = BulkColumn
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\topplayerbyyellowcards.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO TopPlayerByYellowCards (FootballerName, TotalYellowCards, Club)
 SELECT FootballerName, TotalYellowCards, Club
@@ -162,7 +186,10 @@ WITH (
   Club VARCHAR(255) '$.Club'
 );
 
-DECLARE @footballerNameJson NVARCHAR(MAX) = N'[{"FootballerName":"Player1","Position":"Forward","Club":"Club1"},{"FootballerName":"Player2","Position":"Midfielder","Club":"Club2"}]';
+DECLARE @footballerNameJson NVARCHAR(MAX);
+
+SELECT @footballerNameJson = BulkColumn
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\footballername.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO FootballerName (FootballerName, Position, Club)
 SELECT FootballerName, Position, Club
@@ -173,7 +200,10 @@ WITH (
   Club VARCHAR(255) '$.Club'
 );
 
-DECLARE @historicalAchievementJson NVARCHAR(MAX) = N'[{"RankNumber":1,"Club":"Club1","TotalEPLTrophy":5},{"RankNumber":2,"Club":"Club2","TotalEPLTrophy":3}]';
+DECLARE @historicalAchievementJson NVARCHAR(MAX);
+
+SELECT @historicalAchievementJson = BulkColumn
+FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\historialachievement.txt', SINGLE_CLOB) AS j;
 
 INSERT INTO HistoricalAchievement (RankNumber, Club, TotalEPLTrophy)
 SELECT RankNumber, Club, TotalEPLTrophy
@@ -184,4 +214,41 @@ WITH (
   TotalEPLTrophy INT '$.TotalEPLTrophy'
 );
 
+-- Query from data
 
+SELECT *
+FROM Matches
+WHERE HomeTeamScore > 3;
+
+
+SELECT TOP 5 *
+FROM News
+ORDER BY [Time] DESC;
+
+SELECT TeamName, GoalDifference
+FROM ClubLeaderboard
+ORDER BY GoalDifference DESC;
+
+SELECT TOP 3 FootballerName, TotalGoals
+FROM TopGoalsByPlayer
+ORDER BY TotalGoals DESC;
+
+SELECT Club, SUM(TotalYellowCards) AS TotalYellowCards
+FROM TopPlayerByYellowCards
+GROUP BY Club;
+
+SELECT FootballerName, Position
+FROM FootballerName
+WHERE Club = 'Club1';
+
+SELECT Club, TotalEPLTrophy
+FROM HistoricalAchievement
+WHERE TotalEPLTrophy > 3;
+
+SELECT *
+FROM Matches
+WHERE HomeTeamScore = AwayTeamScore;
+
+SELECT TOP 5 FootballerName, TotalAssists
+FROM TopAssistsByPlayer
+ORDER BY TotalAssists DESC;
