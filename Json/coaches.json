@@ -1,0 +1,15 @@
+[
+    {
+      "CoachID": 1,
+      "CoachName": "John Doe",
+      "ClubName": "Man Utd",
+      "ClubID": 3
+    },
+    {
+      "CoachID": 2,
+      "CoachName": "Jane Smith",
+      "ClubName": "Arsenal",
+      "ClubID": 2
+    }
+  ]
+  

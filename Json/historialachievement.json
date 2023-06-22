@@ -1,0 +1,44 @@
+[
+	{
+		"RankNumber":1,
+		"ClubName":"Man Utd",
+		"TotalEPLTrophy":13,
+		"ClubID": 3
+	},
+	{
+		"RankNumber":2,
+		"ClubName":"Man City",
+		"TotalEPLTrophy":7,
+		"ClubID": 1
+	},
+	{
+		"RankNumber":3,
+		"ClubName":"Chelsea",
+		"TotalEPLTrophy":5,
+		"ClubID": 12
+	},
+	{
+		"RankNumber":4,
+		"ClubName":"Arsenal",
+		"TotalEPLTrophy":3,
+		"ClubID": 2
+	},
+	{
+		"RankNumber":5,
+		"ClubName":"Blackburn",
+		"TotalEPLTrophy":1,
+		"ClubID": 21
+	},
+	{
+		"RankNumber":5,
+		"ClubName":"Leicester",
+		"TotalEPLTrophy":1,
+		"ClubID": 18
+	},
+	{
+		"RankNumber":5,
+		"ClubName":"Liverpool",
+		"TotalEPLTrophy":1,
+		"ClubID": 5
+	}
+]

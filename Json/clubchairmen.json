@@ -1,0 +1,14 @@
+[
+    {
+      "ChairmanID": 1,
+      "ChairmanName": "James Brown",
+      "ClubName": "Man Utd",
+      "ClubID": 3
+    },
+    {
+      "ChairmanID": 2,
+      "ChairmanName": "Sarah Johnson",
+      "ClubName": "Man City",
+      "ClubID": 1
+    }
+  ]

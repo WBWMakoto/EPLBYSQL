@@ -1,0 +1,16 @@
+[
+    { 
+        "FootballerName":"Player1",
+        "Position":"Forward",
+        "Club":"Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName":"Player2",
+        "Position":"Midfielder",
+        "Club":"Arsenal",
+        "ClubID": 2
+    }
+
+
+]

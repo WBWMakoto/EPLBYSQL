@@ -1,0 +1,12 @@
+[
+    {
+      "ClubName": "Arsenal",
+      "RevenueAmount": 1000000.00,
+      "ClubID": 2
+    },
+    {
+      "ClubName": "Man Utd",
+      "RevenueAmount": 850000.50,
+      "ClubID": 3
+    }
+  ]

@@ -1,0 +1,19 @@
+[
+    {
+      "StadiumID": 1,
+      "StadiumName": "ABC Stadium",
+      "Capacity": 50000,
+      "ClubName": "Chelsea",
+      "City": "City A",
+      "ClubID": 12
+    },
+    {
+      "StadiumID": 2,
+      "StadiumName": "XYZ Stadium",
+      "Capacity": 60000,
+      "ClubName": "Man Utd",
+      "City": "City B",
+      "ClubID": 3
+    }
+  ]
+  

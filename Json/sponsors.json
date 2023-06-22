@@ -1,0 +1,14 @@
+[
+    {
+      "SponsorID": 1,
+      "SponsorName": "Company X",
+      "ClubName": "Man City",
+      "ClubID": 1
+    },
+    {
+      "SponsorID": 2,
+      "SponsorName": "Company Y",
+      "ClubName": "Man Utd",
+      "ClubID": 3
+    }
+  ]
