@@ -67,6 +67,43 @@ CREATE TABLE HistoricalAchievement (
   Club VARCHAR(255),
   TotalEPLTrophy INT
 );
+CREATE TABLE Stadiums (
+  StadiumID INT PRIMARY KEY,
+  StadiumName VARCHAR(255),
+  Capacity INT,
+  ClubName VARCHAR(255),
+  City VARCHAR(255)
+);
+
+CREATE TABLE Coaches (
+  CoachID INT PRIMARY KEY,
+  CoachName VARCHAR(255),
+  ClubName VARCHAR(255)
+);
+
+CREATE TABLE Referees (
+  RefereeID INT PRIMARY KEY,
+  RefereeName VARCHAR(255),
+  Age INT
+);
+
+CREATE TABLE Sponsors (
+  SponsorID INT PRIMARY KEY,
+  SponsorName VARCHAR(255),
+  ClubName VARCHAR(255)
+);
+
+CREATE TABLE ClubChairmen (
+  ChairmanID INT PRIMARY KEY,
+  ChairmanName VARCHAR(255),
+  ClubName VARCHAR(255)
+);
+
+CREATE TABLE Revenue (
+  ClubName VARCHAR(255) PRIMARY KEY,
+  RevenueAmount DECIMAL(10, 2)
+);
+
 
 DECLARE @matchesJson NVARCHAR(MAX);
 

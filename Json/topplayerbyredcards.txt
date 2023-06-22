@@ -1,1 +1,82 @@
-[{"FootballerName":"Player1","TotalRedCards":2,"Club":"Club1"},{"FootballerName":"Player2","TotalRedCards":1,"Club":"Club2"}]
+[
+	{
+		"FootballerName": "Casemiro",
+		"TotalRedCards": 2,
+		"Club": "Man Utd"
+	},
+	{
+		"FootballerName": "Junior Firpo",
+		"TotalRedCards": 1,
+		"Club": "Leeds"
+	},
+	{
+		"FootballerName": "Abdoulaye Doucoure",
+		"TotalRedCards": 1,
+		"Club": "Everton"
+	},
+	{
+		"FootballerName": "Douglas Luiz",
+		"TotalRedCards": 1,
+		"Club": "Aston Villa"
+	},
+	{
+		"FootballerName": "Diego Costa",
+		"TotalRedCards": 1,
+		"Club": "Wolves"
+	},
+	{
+		"FootballerName": "Joao Felix",
+		"TotalRedCards": 1,
+		"Club": "Chelsea"
+	},
+	{
+		"FootballerName": "Joao Cancelo",
+		"TotalRedCards": 1,
+		"Club": "Man City"
+	},
+	{
+		"FootballerName": "Emerson Royal",
+		"TotalRedCards": 1,
+		"Club": "Tottenham"
+	},
+	{
+		"FootballerName": "Darwin Nunez",
+		"TotalRedCards": 1,
+		"Club": "Liverpool"
+	},
+	{
+		"FootballerName": "Lucas Moura",
+		"TotalRedCards": 1,
+		"Club": "Tottenham"
+	},
+	{
+		"FootballerName": "Nelson Semedo",
+		"TotalRedCards": 1,
+		"Club": "Wolves"
+	},
+	{
+		"FootballerName": "Nathaniel Chalobah",
+		"TotalRedCards": 1,
+		"Club": "Fulham"
+	},
+	{
+		"FootballerName": "Tyrick Mitchell",
+		"TotalRedCards": 1,
+		"Club": "Crystal Palace"
+	},
+	{
+		"FootballerName": "Nick Pope",
+		"TotalRedCards": 1,
+		"Club": "Newcastle"
+	},
+	{
+		"FootballerName": "Nathan Collins",
+		"TotalRedCards": 1,
+		"Club": "Wolves"
+	},
+	{
+		"FootballerName": "Jonny Otto",
+		"TotalRedCards": 1,
+		"Club": "Wolves"
+	}
+]

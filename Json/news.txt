@@ -1,1 +1,68 @@
-[{"NewsTitle":"Title1","NewsContent":"Content1","Time":"2022-07-31T10:00:00Z","Author":"Author1"},{"NewsTitle":"Title2","NewsContent":"Content2","Time":"2022-08-06T15:30:00Z","Author":"Author2"}]
+[
+  {
+    "NewsTitle": "Man Utd chiêu mộ thành công Casemiro",
+    "NewsContent": "Tối 19/8 (giờ Hà Nội), Man Utd đạt được thỏa thuận chiêu mộ Casemiro từ Real Madrid.",
+    "Time": "2022-08-19",
+    "Author": "Fabrizio Romano"
+  },
+  {
+    "NewsTitle": "HLV Tuchel bị sa thải",
+    "NewsContent": "Theo báo Anh Telegraph, việc từ chối tham gia khâu chuyển nhượng và bác đề xuất mua Cristiano Ronaldo mà không giải thích khiến Thomas Tuchel bị Chelsea sa thải.",
+    "Time": "2022-09-08",
+    "Author": "Telegraph"
+  },
+  {
+    "NewsTitle": "HLV Ten Hag bắt Ronaldo ngồi dự bị",
+    "NewsContent": "HLV Erik ten Hag thừa nhận rằng việc ông không để Cristiano Ronaldo vào sân là để anh không phải chịu sự sỉ nhục trong trận thua thảm hại của MU trước Man City.",
+    "Time": "2022-10-03",
+    "Author": "Piers Morgan"
+  },
+  {
+    "NewsTitle": "Ronaldo: Manchester United đã phản bội tôi",
+    "NewsContent": "Trong trò chuyện dài 90 phút trên chương trình Piers Morgan Uncensored, Cristiano Ronaldo công khai chỉ trích Man Utd và HLV Erik ten Hag.",
+    "Time": "2022-11-14",
+    "Author": "Piers Morgan"
+  },
+  {
+    "NewsTitle": "Ngoại hạng Anh chính thức trở lại sau World Cup 2022",
+    "NewsContent": "Đầu tuần sau, giải bóng đá hấp dẫn hàng đầu thế giới Ngoại hạng Anh sẽ trở lại sau quãng thời gian tạm dừng nhường chỗ cho World Cup 2022.",
+    "Time": "2022-12-25",
+    "Author": "Daily Mail"
+  },
+  {
+    "NewsTitle": "Ngoại hạng Anh chính thức trở lại sau World Cup 2022",
+    "NewsContent": "Đầu tuần sau, giải bóng đá hấp dẫn hàng đầu thế giới Ngoại hạng Anh sẽ trở lại sau quãng thời gian tạm dừng nhường chỗ cho World Cup 2022.",
+    "Time": "2022-12-25",
+    "Author": "Daily Mail"
+  },
+  {
+    "NewsTitle": "Chelsea chi gần 300 triệu bảng chuyển nhượng mùa đông, lập kỷ lục chưa từng có",
+    "NewsContent": "Chelsea khiến cả giải Ngoại hạng Anh và bóng đá châu Âu phải tròn mắt khi liên tục mang về những bản hợp đồng 'bom tấn' trước khi tháng 1/2023 kết thúc. Đội bóng thành London cũng lập kỷ lục chi tiêu với gần 300 triệu bảng mua sắm cầu thủ chỉ trong kỳ chuyển nhượng mùa đông.",
+    "Time": "2023-01-31",
+    "Author": "Daily Mail"
+  },
+  {
+    "NewsTitle": "Manchester City gian lận tài chính",
+    "NewsContent": "Manchester City có thể bị Premier League trục xuất vì gian lận tài chính hơn 100 lần",
+    "Time": "2023-02-06",
+    "Author": "Daily Mail"
+  },
+  {
+    "NewsTitle": "Liverpool thắng Manchester United 7-0",
+    "NewsContent": "Salah, Nunez và Gakpo cùng lập cú đúp, giúp Liverpool thắng Man Utd 7-0 ở trận \"Derby Anh\" vòng 26 Ngoại hạng Anh tối 5/3/2023.",
+    "Time": "2023-03-05",
+    "Author": "Daily Mail"
+  },
+  {
+    "NewsTitle": "Arsenal hụt hơi trong cuộc đua vô địch Premier League",
+    "NewsContent": "Ở trận đấu sớm vòng 32 Premier League diễn ra trên sân Emirates rạng sáng nay, Arsenal thi đấu áp đảo nhưng do hàng thủ mắc sai lầm nên các học trò HLV Mikel Arteta đã rất vất vả mới có thể cầm hoà Southampton với tỷ số 3-3, đó cũng là trận hòa thứ 3 liên tiếp của họ",
+    "Time": "2023-04-22",
+    "Author": "Daily Mail"
+  },
+  {
+    "NewsTitle": "Man City vô địch Ngoại hạng Anh",
+    "NewsContent": "Thất bại của Arsenal trước Nottingham giúp Man City vô địch Ngoại hạng Anh 2022-2023 sớm ba trận đấu.",
+    "Time": "2023-05-21",
+    "Author": "Daily Mail"
+  }
+]

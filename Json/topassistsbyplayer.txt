@@ -1,1 +1,117 @@
-[{"FootballerName":"Player1","TotalAssists":5,"Club":"Club1"},{"FootballerName":"Player2","TotalAssists":3,"Club":"Club2"}]
+[
+	{
+		"FootballerName":"Kevin De Bruyne",
+		"TotalAssists":16,
+		"Club":"Man City"
+	},
+	{
+		"FootballerName":"Leandro Trossard",
+		"TotalAssists":12,
+		"Club":"Arsenal"
+	},
+	{
+		"FootballerName":"Mohamed Salah",
+		"TotalAssists":12,
+		"Club":"Liverpool"
+	},
+	{
+		"FootballerName":"Michael Olise",
+		"TotalAssists":11,
+		"Club":"Crystal Palace"
+	},
+	{
+		"FootballerName":"Bukayo Saka",
+		"TotalAssists":11,
+		"Club":"Arsenal"
+	},
+	{
+		"FootballerName":"Riyad Mahrez",
+		"TotalAssists":10,
+		"Club":"Man City"
+	},
+	{
+		"FootballerName":"James Maddison",
+		"TotalAssists":9,
+		"Club":"Leicester"
+	},
+	{
+		"FootballerName":"Trent Alexander-Arnold",
+		"TotalAssists":9,
+		"Club":"Liverpool"
+	},
+	{
+		"FootballerName":"Christian Eriksen",
+		"TotalAssists":8,
+		"Club":"Man Utd"
+	},
+	{
+		"FootballerName":"Ivan Perisic",
+		"TotalAssists":8,
+		"Club":"Tottenham"
+	},
+	{
+		"FootballerName":"Bruno Fernandes",
+		"TotalAssists":8,
+		"Club":"Man Utd"
+	},
+	{
+		"FootballerName":"Andy Robertson",
+		"TotalAssists":8,
+		"Club":"Liverpool"
+	},
+	{
+		"FootballerName":"Pascal GroB",
+		"TotalAssists":8,
+		"Club":"Brighton"
+	},
+	{
+		"FootballerName":"Jack Grealish",
+		"TotalAssists":7,
+		"Club":"Man City"
+	},
+	{
+		"FootballerName":"Jack Harrison",
+		"TotalAssists":7,
+		"Club":"Leeds"
+	},
+	{
+		"FootballerName":"Alex Iwobi",
+		"TotalAssists":7,
+		"Club":"Everton"
+	},
+	{
+		"FootballerName":"Dejan Kulusevski",
+		"TotalAssists":7,
+		"Club":"Tottenham"
+	},
+	{
+		"FootballerName":"Solly March",
+		"TotalAssists":7,
+		"Club":"Brighton"
+	},
+	{
+		"FootballerName":"Martin Odegaard",
+		"TotalAssists":7,
+		"Club":"Arsenal"
+	},
+	{
+		"FootballerName":"Jacob Ramsey",
+		"TotalAssists":7,
+		"Club":"Aston Villa"
+	},
+	{
+		"FootballerName":"Dominic Solanke",
+		"TotalAssists":7,
+		"Club":"Bournemouth"
+	},
+	{
+		"FootballerName":"Kieran Trippier",
+		"TotalAssists":7,
+		"Club":"Newcastle"
+	},
+	{
+		"FootballerName":"Granit Xhaka",
+		"TotalAssists":7,
+		"Club":"Arsenal"
+	}
+]

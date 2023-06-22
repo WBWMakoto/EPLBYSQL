@@ -1,1 +1,117 @@
-[{"FootballerName":"Player1","TotalGoals":10,"Club":"Club1"},{"FootballerName":"Player2","TotalGoals":8,"Club":"Club2"}]
+[
+	{
+		"FootballerName":"Erling Haaland",
+		"TotalGoals":36,
+		"Club":"Man City"
+	},
+	{
+		"FootballerName":"Harry Kane",
+		"TotalGoals":30,
+		"Club":"Tottenham"
+	},
+	{
+		"FootballerName":"Ivan Toney",
+		"TotalGoals":20,
+		"Club":"Brentford"
+	},
+	{
+		"FootballerName":"Mohamed Salah",
+		"TotalGoals":19,
+		"Club":"Liverpool"
+	},
+	{
+		"FootballerName":"Callum Wilson",
+		"TotalGoals":18,
+		"Club":"Newcastle"
+	},
+	{
+		"FootballerName":"Marcus Rashford",
+		"TotalGoals":16,
+		"Club":"Man Utd"
+	},
+	{
+		"FootballerName":"Gabriel Martinelli",
+		"TotalGoals":15,
+		"Club":"Arsenal"
+	},
+	{
+		"FootballerName":"Martin Odegaard",
+		"TotalGoals":15,
+		"Club":"Arsenal"
+	},
+	{
+		"FootballerName":"Ollie Watkins",
+		"TotalGoals":15,
+		"Club":"Aston Villa"
+	},
+	{
+		"FootballerName":"Aleksandar Mitrovic",
+		"TotalGoals":14,
+		"Club":"Fulham"
+	},
+	{
+		"FootballerName":"Bukayo Saka",
+		"TotalGoals":14,
+		"Club":"Arsenal"
+	},
+	{
+		"FootballerName":"Harvey Barnes",
+		"TotalGoals":13,
+		"Club":"Leicester"
+	},
+	{
+		"FootballerName":"Rodrigo Moreno",
+		"TotalGoals":13,
+		"Club":"Leeds"
+	},
+	{
+		"FootballerName":"Miguel Almirón",
+		"TotalGoals":11,
+		"Club":"Newcastle"
+	},
+	{
+		"FootballerName":"Gabriel Jesus",
+		"TotalGoals":11,
+		"Club":"Arsenal"
+	},
+	{
+		"FootballerName":"Phil Foden",
+		"TotalGoals":11,
+		"Club":"Man City"
+	},
+	{
+		"FootballerName":"Roberto Firmino",
+		"TotalGoals":11,
+		"Club":"Liverpool"
+	},
+	{
+		"FootballerName":"Alexander Isak",
+		"TotalGoals":10,
+		"Club":"Newcastle"
+	},
+	{
+		"FootballerName":"Alexis Mac Allister",
+		"TotalGoals":10,
+		"Club":"Brighton"
+	},
+	{
+		"FootballerName":"Eberechi Eze",
+		"TotalGoals":10,
+		"Club":"Crystal Palace"
+	},
+	{
+		"FootballerName":"James Maddison",
+		"TotalGoals":10,
+		"Club":"Leicester"
+	},
+	{
+		"FootballerName":"Son Heung-Min",
+		"TotalGoals":10,
+		"Club":"Tottenham"
+	},
+	{
+		"FootballerName":"Taiwo Awoniyi",
+		"TotalGoals":10,
+		"Club":"Nottingham Forest"
+	}
+]

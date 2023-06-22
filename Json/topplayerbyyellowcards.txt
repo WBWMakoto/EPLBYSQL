@@ -1,1 +1,122 @@
-[{"FootballerName":"Player1","TotalYellowCards":3,"Club":"Club1"},{"FootballerName":"Player2","TotalYellowCards":2,"Club":"Club2"}]
+[
+	{
+		"FootballerName":"Joao Palhinha",
+		"TotalYellowCards":14,
+		"Club":"Fulham"
+	},
+	{
+		"FootballerName":"Ruben Neves",
+		"TotalYellowCards":12,
+		"Club":"Wolves"
+	},
+	{
+		"FootballerName":"Joelinton",
+		"TotalYellowCards":12,
+		"Club":"Newcastle"
+	},
+	{
+		"FootballerName":"Adam Smith",
+		"TotalYellowCards":11,
+		"Club":"Bournemouth"
+	},
+	{
+		"FootballerName":"Fabinho",
+		"TotalYellowCards":11,
+		"Club":"Liverpool"
+	},
+	{
+		"FootballerName":"Nelson Semedo",
+		"TotalYellowCards":11,
+		"Club":"Wolves"
+	},
+	{
+		"FootballerName":"Moises Caicedo",
+		"TotalYellowCards":10,
+		"Club":"Brighton"
+	},
+	{
+		"FootballerName":"Conor Gallagher",
+		"TotalYellowCards":10,
+		"Club":"Chelsea"
+	},
+	{
+		"FootballerName":"James Maddison",
+		"TotalYellowCards":9,
+		"Club":"Leicester"
+	},
+	{
+		"FootballerName":"Cheick Doucoure",
+		"TotalYellowCards":9,
+		"Club":"Crystal Palace"
+	},
+	{
+		"FootballerName":"Ivan Toney",
+		"TotalYellowCards":9,
+		"Club":"Brentford"
+	},
+	{
+		"FootballerName":"Andreas Pereira",
+		"TotalYellowCards":9,
+		"Club":"Fulham"
+	},
+	{
+		"FootballerName":"Cristian Romero",
+		"TotalYellowCards":9,
+		"Club":"Tottenham"
+	},
+	{
+		"FootballerName":"Amadou Onana",
+		"TotalYellowCards":9,
+		"Club":"Everton"
+	},
+	{
+		"FootballerName":"Marc Guehi",
+		"TotalYellowCards":8,
+		"Club":"Crystal Palace"
+	},
+	{
+		"FootballerName":"Mateo Kovacic",
+		"TotalYellowCards":8,
+		"Club":"Chelsea"
+	},
+	{
+		"FootballerName":"Antonee Robinson",
+		"TotalYellowCards":8,
+		"Club":"Fulham"
+	},
+	{
+		"FootballerName":"Boubakary Soumare",
+		"TotalYellowCards":8,
+		"Club":"Leicester"
+	},
+	{
+		"FootballerName":"Rodrigo Bentancur",
+		"TotalYellowCards":8,
+		"Club":"Tottenham"
+	},
+	{
+		"FootballerName":"Romeo Lavia",
+		"TotalYellowCards":8,
+		"Club":"Southampton"
+	},
+	{
+		"FootballerName":"Kenny Tete",
+		"TotalYellowCards":8,
+		"Club":"Fulham"
+	},
+	{
+		"FootballerName":"Scott McTominay",
+		"TotalYellowCards":8,
+		"Club":"Man Utd"
+	},
+	{
+		"FootballerName":"Alexis Mac Allister",
+		"TotalYellowCards":8,
+		"Club":"Brighton"
+	},
+	{
+		"FootballerName":"Luke Shaw",
+		"TotalYellowCards":8,
+		"Club":"Man Utd"
+	}
+]
