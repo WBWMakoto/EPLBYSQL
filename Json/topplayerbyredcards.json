@@ -1,8 +1,12 @@
+
+File này làm theo mẫu clubID vừa được mẫu ở mẩu dự liệu 1 
+
 [
 	{
 		"FootballerName": "Casemiro",
 		"TotalRedCards": 2,
-		"Club": "Man Utd"
+		"Club": "Man Utd",
+		"ClubId": 3
 	},
 	{
 		"FootballerName": "Junior Firpo",

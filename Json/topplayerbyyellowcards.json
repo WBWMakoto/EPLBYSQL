@@ -1,8 +1,11 @@
+File này làm theo mẫu clubID vừa được mẫu ở mẩu dự liệu 1 
+
 [
 	{
 		"FootballerName":"Joao Palhinha",
 		"TotalYellowCards":14,
-		"Club":"Fulham"
+		"Club":"Fulham",
+		"ClubID":11
 	},
 	{
 		"FootballerName":"Ruben Neves",

@@ -1,6 +1,4 @@
-﻿
-
--- Create the database
+﻿-- Create the database
 CREATE DATABASE EPL;
 GO
 
@@ -8,8 +6,7 @@ GO
 USE EPL;
 GO
 
-
-
+--Create 15 tables
 CREATE TABLE Matches (
   MatchNumber INT PRIMARY KEY,
   DateUtc DATETIME,
@@ -91,14 +88,10 @@ CREATE TABLE Footballer (
 
 CREATE TABLE HistoricalAchievement (
   ClubID INT PRIMARY KEY,
-  RankNumber INT ,
-  
+  RankNumber INT,
   ClubName VARCHAR(255),
-  TotalEPLTrophy INT,
-  
+  TotalEPLTrophy INT
 );
-
-
 
 CREATE TABLE Stadiums (
   StadiumID INT PRIMARY KEY IDENTITY(1,1),
@@ -148,7 +141,7 @@ CREATE TABLE Revenue (
   CONSTRAINT FK_Revenue_ClubLeaderboard FOREIGN KEY (ClubID) REFERENCES ClubLeaderboard(ClubID)
 );
 
-
+--Declare + insert data into the database
 CREATE PROCEDURE InsertMatchesFromJson
 AS
 BEGIN
@@ -178,8 +171,6 @@ END
 EXEC InsertMatchesFromJson;
 
 
-
-
 DECLARE @matchesJson NVARCHAR(MAX);
 SELECT @matchesJson = BulkColumn
 FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\matches.json', SINGLE_CLOB) AS j;
@@ -201,7 +192,6 @@ WITH (
 ORDER BY MatchNumber ASC; 
 
 
-
 DECLARE @newsJson NVARCHAR(MAX);
 SELECT @newsJson = BulkColumn
 FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\news.json', SINGLE_CLOB) AS j;
@@ -215,8 +205,6 @@ WITH (
   TimePublished VARCHAR(50) '$.Time',
   Author VARCHAR(255) '$.Author'
 );
-
-
 
 
 DECLARE @clubLeaderboardJson NVARCHAR(MAX);
@@ -259,6 +247,7 @@ WITH (
   ClubID INT '$.ClubID'
 );
 
+
 DECLARE @topAssistsByPlayerJson NVARCHAR(MAX);
 
 SELECT @topAssistsByPlayerJson = BulkColumn
@@ -273,6 +262,7 @@ WITH (
   TotalAssists INT '$.TotalAssists',
   ClubName VARCHAR(255) '$.Club'
 );
+
 
 DECLARE @topPlayerByRedCardsJson NVARCHAR(MAX);
 
@@ -289,6 +279,7 @@ WITH (
   ClubName VARCHAR(255) '$.Club'
 );
 
+
 DECLARE @topPlayerByYellowCardsJson NVARCHAR(MAX);
 
 SELECT @topPlayerByYellowCardsJson = BulkColumn
@@ -303,6 +294,7 @@ WITH (
   TotalYellowCards INT '$.TotalYellowCards',
   Clubname VARCHAR(255) '$.Club'
 );
+
 
 DECLARE @footballerNameJson NVARCHAR(MAX);
 
@@ -319,6 +311,31 @@ WITH (
   ClubID INT '$.ClubID'
 );
 
+
+/*CREATE PROCEDURE InsertHistoricalAchievementFromJson
+AS
+BEGIN
+    DECLARE @historicalAchievementJson NVARCHAR(MAX);
+
+    -- Read the JSON file into a variable
+    SELECT @historicalAchievementJson = BulkColumn
+    FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\historialachievement.json', SINGLE_CLOB) AS j;
+
+    -- Insert the JSON data into the HistoricalAchievement table, sorted by RankNumber
+    INSERT INTO HistoricalAchievement (RankNumber, ClubName, ClubID, TotalEPLTrophy)
+    SELECT RankNumber, ClubName, ClubID, TotalEPLTrophy
+    FROM OPENJSON(@historicalAchievementJson)
+    WITH (
+      RankNumber INT '$.RankNumber',
+      ClubName VARCHAR(255) '$.ClubName',
+      ClubID INT '$.ClubID',
+      TotalEPLTrophy INT '$.TotalEPLTrophy'
+    )
+    ORDER BY RankNumber ASC;
+END;
+EXEC InsertHistoricalAchievementFromJson;*/
+
+
 DECLARE @historicalAchievementJson NVARCHAR(MAX);
 
 SELECT @historicalAchievementJson = BulkColumn
@@ -333,9 +350,8 @@ WITH (
   ClubName VARCHAR(255) '$.ClubName',
   ClubID INT '$.ClubID',
   TotalEPLTrophy INT '$.TotalEPLTrophy'
-);
-
-
+) 
+ORDER BY RankNumber ASC;
 
 
 DECLARE @stadiumsJson NVARCHAR(MAX);
@@ -353,7 +369,6 @@ WITH (
   ClubID INT '$.ClubID',
   City VARCHAR(255) '$.City'
 );
-
 
 
 DECLARE @coachesJson NVARCHAR(MAX);
@@ -385,6 +400,7 @@ WITH (
   Age INT '$.Age'
 );
 
+
 DECLARE @sponsorsJson NVARCHAR(MAX);
 
 SELECT @sponsorsJson = BulkColumn
@@ -400,6 +416,7 @@ WITH (
   ClubID INT '$.ClubID'
 );
 
+
 DECLARE @clubChairmenJson NVARCHAR(MAX);
 
 SELECT @clubChairmenJson = BulkColumn
@@ -414,6 +431,7 @@ WITH (
   ClubName VARCHAR(255) '$.ClubName',
   ClubID INT '$.ClubID'
 );
+
 
 DECLARE @revenueJson NVARCHAR(MAX);
 
@@ -433,41 +451,66 @@ WITH (
 
 
 
+-- 81. Select all columns from the ClubLeaderboard table, sorted by TotalPoints in descending order.
 SELECT * FROM ClubLeaderboard ORDER BY TotalPoints DESC;
 
+-- 82. Select the CoachName and ClubName columns from the Coaches table.
 SELECT CoachName, ClubName FROM Coaches;
 
+-- 83. Select the RefereeName and Age columns from the Referees table.
 SELECT RefereeName, Age FROM Referees;
 
+-- 84. Select the SponsorName from the Sponsors table where the ClubName is equal to 'Club Name'.
 SELECT SponsorName FROM Sponsors WHERE ClubName = 'Club Name';
 
+-- 85. Select the ChairmanName from the ClubChairmen table where the ClubName is equal to 'Club Name'.
 SELECT ChairmanName FROM ClubChairmen WHERE ClubName = 'Club Name';
 
+-- 86. Select the ClubName and RevenueAmount columns from the Revenue table.
 SELECT ClubName, RevenueAmount FROM Revenue;
 
+-- 87. Select all columns from the News table where the Author is equal to 'Author Name'.
 SELECT * FROM News WHERE Author = 'Author Name';
 
+-- 88. Select the FootballerName and Position columns from the Footballer table where the ClubName is equal to 'Club Name'.
 SELECT FootballerName, Position FROM Footballer WHERE ClubName = 'Club Name';
 
-
-
+-- 89. Select all columns from the Matches table where the HomeTeamScore is greater than the AwayTeamScore.
 SELECT * FROM Matches WHERE HomeTeamScore > AwayTeamScore;
 
+-- 90. Select the ClubName from the Stadiums table where the City is equal to 'City Name'.
 SELECT ClubName FROM Stadiums WHERE City = 'City Name';
 
+-- 91. Select all columns from the Matches table where the [Group] is equal to 'Group Name'.
 SELECT * FROM Matches WHERE [Group] = 'Group Name';
 
+-- 92. Select the ClubName and TotalMatches columns from the ClubLeaderboard table.
 SELECT ClubName, TotalMatches FROM ClubLeaderboard;
 
+-- 93. Select the FootballerName and TotalGoals columns from the TopGoalsByPlayer table where the TotalGoals is greater than 10.
 SELECT FootballerName, TotalGoals FROM TopGoalsByPlayer WHERE TotalGoals > 10;
 
+-- 94. Select the ClubName from the ClubLeaderboard table where the Losses is equal to 0.
 SELECT ClubName FROM ClubLeaderboard WHERE Losses = 0;
 
+-- 95. Select the CoachName from the Coaches table, grouped by CoachName, having the COUNT(DISTINCT ClubName) greater than 1.
 SELECT CoachName FROM Coaches GROUP BY CoachName HAVING COUNT(DISTINCT ClubName) > 1;
 
+-- 96. Select the RefereeName and Age from the Referees table where the Age is less than 40.
 SELECT RefereeName, Age FROM Referees WHERE Age < 40;
 
-
+-- 97. Select the ClubName and RevenueAmount columns from the Revenue table where the RevenueAmount is greater than 1000000.
 SELECT ClubName, RevenueAmount FROM Revenue WHERE RevenueAmount > 1000000;
 
+-- 98. Select all columns from the Matches table where the Location is equal to 'Stadium Name'.
 SELECT * FROM Matches WHERE Location = 'Stadium Name';
+
+-- 99. Select the MatchNumber, DateUtc, HomeTeam, AwayTeam, and HomeTeamScore from the Matches table where the HomeTeamScore is greater than the AwayTeamScore.
+SELECT MatchNumber, DateUtc, HomeTeam, AwayTeam, HomeTeamScore
+FROM Matches
+WHERE HomeTeamScore > AwayTeamScore;
+
+-- 100. Select the ClubName, RankNumber, and TotalPoints from the ClubLeaderboard table where the TotalPoints is equal to the highest number of points.
+SELECT ClubName, RankNumber, TotalPoints
+FROM ClubLeaderboard
+WHERE TotalPoints = (SELECT MAX(TotalPoints) FROM ClubLeaderboard);

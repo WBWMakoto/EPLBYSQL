@@ -1,8 +1,11 @@
+File này làm theo mẫu clubID vừa được mẫu ở mẩu dự liệu 1 
+
 [
 	{
 		"FootballerName":"Erling Haaland",
 		"TotalGoals":36,
-		"Club":"Man City"
+		"Club":"Man City",
+		"ClubID":1
 	},
 	{
 		"FootballerName":"Harry Kane",

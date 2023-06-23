@@ -1,8 +1,10 @@
+File này làm theo mẫu clubID vừa được mẫu ở mẩu dự liệu 1 
 [
 	{
 		"FootballerName":"Kevin De Bruyne",
 		"TotalAssists":16,
-		"Club":"Man City"
+		"Club":"Man City",
+		"ClubID":1
 	},
 	{
 		"FootballerName":"Leandro Trossard",
