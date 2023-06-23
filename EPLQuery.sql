@@ -449,7 +449,251 @@ WITH (
 
 -- Query from data
 
+-- 1. Select all columns from the ClubLeaderboard table, sorted by TotalPoints in descending order.
+SELECT * FROM ClubLeaderboard ORDER BY TotalPoints DESC;
 
+-- 2. Select the CoachName and ClubName columns from the Coaches table.
+SELECT CoachName, ClubName FROM Coaches;
+
+-- 3. Select the RefereeName and Age columns from the Referees table.
+SELECT RefereeName, Age FROM Referees;
+
+-- 4. Select the SponsorName from the Sponsors table where the ClubName is equal to 'Club Name'.
+SELECT SponsorName FROM Sponsors WHERE ClubName = 'Club Name';
+
+-- 5. Select the ChairmanName from the ClubChairmen table where the ClubName is equal to 'Club Name'.
+SELECT ChairmanName FROM ClubChairmen WHERE ClubName = 'Club Name';
+
+-- 6. Select the ClubName and RevenueAmount columns from the Revenue table.
+SELECT ClubName, RevenueAmount FROM Revenue;
+
+-- 7. Select all columns from the News table where the Author is equal to 'Author Name'.
+SELECT * FROM News WHERE Author = 'Author Name';
+
+-- 8. Select the FootballerName and Position columns from the Footballer table where the ClubName is equal to 'Club Name'.
+SELECT FootballerName, Position FROM Footballer WHERE ClubName = 'Club Name';
+
+-- 9. Select all columns from the Matches table where the HomeTeamScore is greater than the AwayTeamScore.
+SELECT * FROM Matches WHERE HomeTeamScore > AwayTeamScore;
+
+-- 10. Select the ClubName from the Stadiums table where the City is equal to 'City Name'.
+SELECT ClubName FROM Stadiums WHERE City = 'City Name';
+
+-- 11. Select all columns from the Matches table where the [Group] is equal to 'Group Name'.
+SELECT * FROM Matches WHERE [Group] = 'Group Name';
+
+-- 12. Select the ClubName and TotalMatches columns from the ClubLeaderboard table.
+SELECT ClubName, TotalMatches FROM ClubLeaderboard;
+
+-- 13. Select the FootballerName and TotalGoals columns from the TopGoalsByPlayer table where the TotalGoals is greater than 10.
+SELECT FootballerName, TotalGoals FROM TopGoalsByPlayer WHERE TotalGoals > 10;
+
+-- 14. Select the ClubName from the ClubLeaderboard table where the Losses is equal to 0.
+SELECT ClubName FROM ClubLeaderboard WHERE Losses = 0;
+
+-- 15. Select the CoachName from the Coaches table, grouped by CoachName, having the COUNT(DISTINCT ClubName) greater than 1.
+SELECT CoachName FROM Coaches GROUP BY CoachName HAVING COUNT(DISTINCT ClubName) > 1;
+
+-- 16. Select the RefereeName and Age from the Referees table where the Age is less than 40.
+SELECT RefereeName, Age FROM Referees WHERE Age < 40;
+
+-- 17. Select the ClubName and RevenueAmount columns from the Revenue table where the RevenueAmount is greater than 1000000.
+SELECT ClubName, RevenueAmount FROM Revenue WHERE RevenueAmount > 1000000;
+
+-- 18. Select all columns from the Matches table where the Location is equal to 'Stadium Name'.
+SELECT * FROM Matches WHERE Location = 'Stadium Name';
+
+-- 19. Select the MatchNumber, DateUtc, HomeTeam, AwayTeam, and HomeTeamScore from the Matches table where the HomeTeamScore is greater than the AwayTeamScore.
+SELECT MatchNumber, DateUtc, HomeTeam, AwayTeam, HomeTeamScore
+FROM Matches
+WHERE HomeTeamScore > AwayTeamScore;
+
+-- 20. Select the ClubName, RankNumber, and TotalPoints from the ClubLeaderboard table where the TotalPoints is equal to the highest number of points.
+SELECT ClubName, RankNumber, TotalPoints
+FROM ClubLeaderboard
+WHERE TotalPoints = (SELECT MAX(TotalPoints) FROM ClubLeaderboard);
+
+-- 21. Select the FootballerName and TotalAssists columns from the TopAssistsByPlayer table where the TotalAssists is greater than 5.
+SELECT FootballerName, TotalAssists FROM TopAssistsByPlayer WHERE TotalAssists > 5;
+
+-- 22. Select the FootballerName and TotalRedCards columns from the TopPlayerByRedCards table where the TotalRedCards is greater than 0.
+SELECT FootballerName, TotalRedCards FROM TopPlayerByRedCards WHERE TotalRedCards > 0;
+
+-- 23. Select the FootballerName and TotalYellowCards columns from the TopPlayerByYellowCards table where the TotalYellowCards is greater than 0.
+SELECT FootballerName, TotalYellowCards FROM TopPlayerByYellowCards WHERE TotalYellowCards > 0;
+
+-- 24. Select the FootballerName and Position columns from the Footballer table where the Position is equal to 'Forward'.
+SELECT FootballerName, Position FROM Footballer WHERE Position = 'Forward';
+
+-- 25. Select the ClubName and TotalEPLTrophy columns from the HistoricalAchievement table where the TotalEPLTrophy is greater than 0.
+SELECT ClubName, TotalEPLTrophy FROM HistoricalAchievement WHERE TotalEPLTrophy > 0;
+
+-- 26. Select the StadiumName and Capacity columns from the Stadiums table where the Capacity is greater than 50000.
+SELECT StadiumName, Capacity FROM Stadiums WHERE Capacity > 50000;
+
+-- 27. Select the CoachName, ClubName, and RankNumber columns from the Coaches table, joined with the ClubLeaderboard table on ClubID, sorted by RankNumber in ascending order.
+SELECT C.CoachName, C.ClubName, L.RankNumber
+FROM Coaches C
+JOIN ClubLeaderboard L ON C.ClubID = L.ClubID
+ORDER BY L.RankNumber ASC;
+
+-- 28. Select the RefereeName and Age columns from the Referees table where the Age is between 30 and 50.
+SELECT RefereeName, Age FROM Referees WHERE Age BETWEEN 30 AND 50;
+
+-- 29. Select the SponsorName and ClubName columns from the Sponsors table where the SponsorName contains the word 'Insurance'.
+SELECT SponsorName, ClubName FROM Sponsors WHERE SponsorName LIKE '%Insurance%';
+
+-- 30. Select the ChairmanName and ClubName columns from the ClubChairmen table where the ChairmanName starts with 'John'.
+SELECT ChairmanName, ClubName FROM ClubChairmen WHERE ChairmanName LIKE 'John%';
+
+-- 31. Select the ClubName and RevenueAmount columns from the Revenue table where the RevenueAmount is between 1000000 and 5000000.
+SELECT ClubName, RevenueAmount FROM Revenue WHERE RevenueAmount BETWEEN 1000000 AND 5000000;
+
+-- 32. Select the NewsTitle and TimePublished columns from the News table, sorted by TimePublished in descending order.
+SELECT NewsTitle, TimePublished FROM News ORDER BY TimePublished DESC;
+
+-- 33. Select the MatchNumber, DateUtc, RoundNumber, and Location columns from the Matches table where the RoundNumber is greater than or equal to 10.
+SELECT MatchNumber, DateUtc, RoundNumber, Location FROM Matches WHERE RoundNumber >= 10;
+
+-- 34. Select the ClubName and TotalPoints columns from the ClubLeaderboard table, sorted by TotalPoints in descending order, and limit the result to 10 rows.
+
+-- 35. Select the FootballerName and Position from the Footballer table.
+SELECT FootballerName, Position FROM Footballer;
+
+-- 36. Select the ClubName and Capacity from the Stadiums table.
+SELECT ClubName, Capacity FROM Stadiums;
+
+-- 37. Select the CoachName and ClubName from the Coaches table.
+SELECT CoachName, ClubName FROM Coaches;
+
+-- 38. Select the RefereeName and Age from the Referees table.
+SELECT RefereeName, Age FROM Referees;
+
+-- 39. Select the SponsorName and ClubName from the Sponsors table.
+SELECT SponsorName, ClubName FROM Sponsors;
+
+-- 40. Select the ChairmanName and ClubName from the ClubChairmen table.
+SELECT ChairmanName, ClubName FROM ClubChairmen;
+
+-- 41. Select the ClubID, RankNumber, and ClubName from the ClubLeaderboard table.
+SELECT ClubID, RankNumber, ClubName FROM ClubLeaderboard;
+
+-- 42. Select the NewsTitle, NewsContent, and TimePublished from the News table.
+SELECT NewsTitle, NewsContent, TimePublished FROM News;
+
+-- 43. Select the MatchNumber, DateUtc, and RoundNumber from the Matches table.
+SELECT MatchNumber, DateUtc, RoundNumber FROM Matches;
+
+-- 44. Select the FootballerName, TotalGoals, and ClubName from the TopGoalsByPlayer table.
+SELECT FootballerName, TotalGoals, ClubName FROM TopGoalsByPlayer;
+
+-- 45. Select the FootballerName, TotalAssists, and ClubName from the TopAssistsByPlayer table.
+SELECT FootballerName, TotalAssists, ClubName FROM TopAssistsByPlayer;
+
+-- 46. Select the FootballerName, TotalRedCards, and ClubName from the TopPlayerByRedCards table.
+SELECT FootballerName, TotalRedCards, ClubName FROM TopPlayerByRedCards;
+
+-- 47. Select the FootballerName, TotalYellowCards, and ClubName from the TopPlayerByYellowCards table.
+SELECT FootballerName, TotalYellowCards, ClubName FROM TopPlayerByYellowCards;
+
+-- 48. Select the ClubID, RankNumber, ClubName, and TotalEPLTrophy from the HistoricalAchievement table.
+SELECT ClubID, RankNumber, ClubName, TotalEPLTrophy FROM HistoricalAchievement;
+
+-- 49. Select the ClubID, ClubName, and RevenueAmount from the Revenue table.
+SELECT ClubID, ClubName, RevenueAmount FROM Revenue;
+
+-- 50. Select the StadiumName, Capacity, ClubName, and City from the Stadiums table.
+SELECT StadiumName, Capacity, ClubName, City FROM Stadiums;
+
+-- 51. Select the CoachID, CoachName, ClubName, and ClubID from the Coaches table.
+SELECT CoachID, CoachName, ClubName, ClubID FROM Coaches;
+
+-- 52. Select the RefereeID, RefereeName, and Age from the Referees table.
+SELECT RefereeID, RefereeName, Age FROM Referees;
+
+-- 53. Select the SponsorID, SponsorName, ClubName, and ClubID from the Sponsors table.
+SELECT SponsorID, SponsorName, ClubName, ClubID FROM Sponsors;
+
+-- 54. Select the ChairmanID, ChairmanName, ClubName, and ClubID from the ClubChairmen table.
+SELECT ChairmanID, ChairmanName, ClubName, ClubID FROM ClubChairmen;
+
+-- 55. Select the ClubID, RankNumber, ClubName, and TotalMatches from the ClubLeaderboard table.
+SELECT ClubID, RankNumber, ClubName, TotalMatches FROM ClubLeaderboard;
+
+-- 56. Select the NewsID, NewsTitle, NewsContent, and TimePublished from the News table.
+SELECT NewsID, NewsTitle, NewsContent, TimePublished FROM News;
+
+-- 57. Select the MatchNumber, DateUtc, RoundNumber, and Location from the Matches table.
+SELECT MatchNumber, DateUtc, RoundNumber, Location FROM Matches;
+
+-- 58. Select the FootballerName, TotalGoals, ClubName, and ClubID from the TopGoalsByPlayer table.
+SELECT FootballerName, TotalGoals, ClubName, ClubID FROM TopGoalsByPlayer;
+
+-- 59. Select the FootballerName, TotalAssists, ClubName, and ClubID from the TopAssistsByPlayer table.
+SELECT FootballerName, TotalAssists, ClubName, ClubID FROM TopAssistsByPlayer;
+
+-- 60. Select the FootballerName, TotalRedCards, ClubName, and ClubID from the TopPlayerByRedCards table.
+SELECT FootballerName, TotalRedCards, ClubName, ClubID FROM TopPlayerByRedCards;
+
+-- 61. Select the FootballerName, TotalYellowCards, ClubName, and ClubID from the TopPlayerByYellowCards table.
+SELECT FootballerName, TotalYellowCards, ClubName, ClubID FROM TopPlayerByYellowCards;
+
+-- 62. Select the ClubID, RankNumber, ClubName, and TotalEPLTrophy from the HistoricalAchievement table.
+SELECT ClubID, RankNumber, ClubName, TotalEPLTrophy FROM HistoricalAchievement;
+
+-- 63. Select the ClubID, ClubName, RevenueAmount from the Revenue table.
+SELECT ClubID, ClubName, RevenueAmount FROM Revenue;
+
+-- 64. Select the StadiumName, Capacity, ClubName, City from the Stadiums table.
+SELECT StadiumName, Capacity, ClubName, City FROM Stadiums;
+
+-- 65. Select the CoachID, CoachName, ClubName, ClubID from the Coaches table.
+SELECT CoachID, CoachName, ClubName, ClubID FROM Coaches;
+
+-- 66. Select the RefereeID, RefereeName, Age from the Referees table.
+SELECT RefereeID, RefereeName, Age FROM Referees;
+
+-- 67. Select the SponsorID, SponsorName, ClubName, ClubID from the Sponsors table.
+SELECT SponsorID, SponsorName, ClubName, ClubID FROM Sponsors;
+
+-- 68. Select the ChairmanID, ChairmanName, ClubName, ClubID from the ClubChairmen table.
+SELECT ChairmanID, ChairmanName, ClubName, ClubID FROM ClubChairmen;
+
+-- 69. Select the ClubID, RankNumber, ClubName, TotalMatches from the ClubLeaderboard table.
+SELECT ClubID, RankNumber, ClubName, TotalMatches FROM ClubLeaderboard;
+
+-- 70. Select the NewsID, NewsTitle, NewsContent, TimePublished from the News table.
+SELECT NewsID, NewsTitle, NewsContent, TimePublished FROM News;
+
+-- 71. Select the MatchNumber, DateUtc, RoundNumber, Location from the Matches table.
+SELECT MatchNumber, DateUtc, RoundNumber, Location FROM Matches;
+
+-- 72. Select the FootballerName, TotalGoals, ClubName, ClubID from the TopGoalsByPlayer table.
+SELECT FootballerName, TotalGoals, ClubName, ClubID FROM TopGoalsByPlayer;
+
+-- 73. Select the FootballerName, TotalAssists, ClubName, ClubID from the TopAssistsByPlayer table.
+SELECT FootballerName, TotalAssists, ClubName, ClubID FROM TopAssistsByPlayer;
+
+-- 74. Select the FootballerName, TotalRedCards, ClubName, ClubID from the TopPlayerByRedCards table.
+SELECT FootballerName, TotalRedCards, ClubName, ClubID FROM TopPlayerByRedCards;
+
+-- 75. Select the FootballerName, TotalYellowCards, ClubName, ClubID from the TopPlayerByYellowCards table.
+SELECT FootballerName, TotalYellowCards, ClubName, ClubID FROM TopPlayerByYellowCards;
+
+-- 76. Select the ClubID, RankNumber, ClubName, TotalEPLTrophy from the HistoricalAchievement table.
+SELECT ClubID, RankNumber, ClubName, TotalEPLTrophy FROM HistoricalAchievement;
+
+-- 77. Select the ClubID, ClubName, RevenueAmount from the Revenue table.
+SELECT ClubID, ClubName, RevenueAmount FROM Revenue;
+
+-- 78. Select the StadiumName, Capacity, ClubName, City from the Stadiums table.
+SELECT StadiumName, Capacity, ClubName, City FROM Stadiums;
+
+-- 79. Select the CoachID, CoachName, ClubName, ClubID from the Coaches table.
+SELECT CoachID, CoachName, ClubName, ClubID FROM Coaches;
+
+-- 80. Select the RefereeID, RefereeName, Age from the Referees table.
+SELECT RefereeID, RefereeName, Age FROM Referees;
 
 -- 81. Select all columns from the ClubLeaderboard table, sorted by TotalPoints in descending order.
 SELECT * FROM ClubLeaderboard ORDER BY TotalPoints DESC;
