@@ -311,6 +311,20 @@ WITH (
   ClubID INT '$.ClubID'
 );
 
+-- Trigger to update the TimePublished column with the current datetime when a new row is inserted
+
+CREATE TRIGGER UpdateTimePublished
+ON News
+AFTER INSERT
+AS
+BEGIN
+    UPDATE News
+    SET TimePublished = GETDATE()
+    FROM inserted
+    WHERE News.NewsID = inserted.NewsID;
+END;
+
+
 
 /*CREATE PROCEDURE InsertHistoricalAchievementFromJson
 AS
