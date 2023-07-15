@@ -1,119 +1,140 @@
-File này làm theo mẫu clubID vừa được mẫu ở mẩu dự liệu 1 
 [
-	{
-		"FootballerName":"Kevin De Bruyne",
-		"TotalAssists":16,
-		"Club":"Man City",
-		"ClubID":1
-	},
-	{
-		"FootballerName":"Leandro Trossard",
-		"TotalAssists":12,
-		"Club":"Arsenal"
-	},
-	{
-		"FootballerName":"Mohamed Salah",
-		"TotalAssists":12,
-		"Club":"Liverpool"
-	},
-	{
-		"FootballerName":"Michael Olise",
-		"TotalAssists":11,
-		"Club":"Crystal Palace"
-	},
-	{
-		"FootballerName":"Bukayo Saka",
-		"TotalAssists":11,
-		"Club":"Arsenal"
-	},
-	{
-		"FootballerName":"Riyad Mahrez",
-		"TotalAssists":10,
-		"Club":"Man City"
-	},
-	{
-		"FootballerName":"James Maddison",
-		"TotalAssists":9,
-		"Club":"Leicester"
-	},
-	{
-		"FootballerName":"Trent Alexander-Arnold",
-		"TotalAssists":9,
-		"Club":"Liverpool"
-	},
-	{
-		"FootballerName":"Christian Eriksen",
-		"TotalAssists":8,
-		"Club":"Man Utd"
-	},
-	{
-		"FootballerName":"Ivan Perisic",
-		"TotalAssists":8,
-		"Club":"Tottenham"
-	},
-	{
-		"FootballerName":"Bruno Fernandes",
-		"TotalAssists":8,
-		"Club":"Man Utd"
-	},
-	{
-		"FootballerName":"Andy Robertson",
-		"TotalAssists":8,
-		"Club":"Liverpool"
-	},
-	{
-		"FootballerName":"Pascal GroB",
-		"TotalAssists":8,
-		"Club":"Brighton"
-	},
-	{
-		"FootballerName":"Jack Grealish",
-		"TotalAssists":7,
-		"Club":"Man City"
-	},
-	{
-		"FootballerName":"Jack Harrison",
-		"TotalAssists":7,
-		"Club":"Leeds"
-	},
-	{
-		"FootballerName":"Alex Iwobi",
-		"TotalAssists":7,
-		"Club":"Everton"
-	},
-	{
-		"FootballerName":"Dejan Kulusevski",
-		"TotalAssists":7,
-		"Club":"Tottenham"
-	},
-	{
-		"FootballerName":"Solly March",
-		"TotalAssists":7,
-		"Club":"Brighton"
-	},
-	{
-		"FootballerName":"Martin Odegaard",
-		"TotalAssists":7,
-		"Club":"Arsenal"
-	},
-	{
-		"FootballerName":"Jacob Ramsey",
-		"TotalAssists":7,
-		"Club":"Aston Villa"
-	},
-	{
-		"FootballerName":"Dominic Solanke",
-		"TotalAssists":7,
-		"Club":"Bournemouth"
-	},
-	{
-		"FootballerName":"Kieran Trippier",
-		"TotalAssists":7,
-		"Club":"Newcastle"
-	},
-	{
-		"FootballerName":"Granit Xhaka",
-		"TotalAssists":7,
-		"Club":"Arsenal"
-	}
+    {
+        "FootballerName": "Kevin De Bruyne",
+        "TotalAssists": 16,
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "Leandro Trossard",
+        "TotalAssists": 12,
+        "Club": "Arsenal",
+        "ClubID": 2
+    },
+    {
+        "FootballerName": "Mohamed Salah",
+        "TotalAssists": 12,
+        "Club": "Liverpool",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "Michael Olise",
+        "TotalAssists": 11,
+        "Club": "Crystal Palace",
+        "ClubID": 11
+    },
+    {
+        "FootballerName": "Bukayo Saka",
+        "TotalAssists": 11,
+        "Club": "Arsenal",
+        "ClubID": 2
+    },
+    {
+        "FootballerName": "Riyad Mahrez",
+        "TotalAssists": 10,
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "James Maddison",
+        "TotalAssists": 9,
+        "Club": "Leicester",
+        "ClubID": 18
+    },
+    {
+        "FootballerName": "Trent Alexander-Arnold",
+        "TotalAssists": 9,
+        "Club": "Liverpool",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "Christian Eriksen",
+        "TotalAssists": 8,
+        "Club": "Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName": "Ivan Perisic",
+        "TotalAssists": 8,
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Bruno Fernandes",
+        "TotalAssists": 8,
+        "Club": "Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName": "Andy Robertson",
+        "TotalAssists": 8,
+        "Club": "Liverpool",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "Pascal GroB",
+        "TotalAssists": 8,
+        "Club": "Brighton",
+        "ClubID": 6
+    },
+    {
+        "FootballerName": "Jack Grealish",
+        "TotalAssists": 7,
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "Jack Harrison",
+        "TotalAssists": 7,
+        "Club": "Leeds",
+        "ClubID": 19
+    },
+    {
+        "FootballerName": "Alex Iwobi",
+        "TotalAssists": 7,
+        "Club": "Everton",
+        "ClubID": 17
+    },
+    {
+        "FootballerName": "Dejan Kulusevski",
+        "TotalAssists": 7,
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Solly March",
+        "TotalAssists": 7,
+        "Club": "Brighton",
+        "ClubID": 6
+    },
+    {
+        "FootballerName": "Martin Odegaard",
+        "TotalAssists": 7,
+        "Club": "Arsenal",
+        "ClubID": 2
+    },
+    {
+        "FootballerName": "Jacob Ramsey",
+        "TotalAssists": 7,
+        "Club": "Aston Villa",
+        "ClubID": 7
+    },
+    {
+        "FootballerName": "Dominic Solanke",
+        "TotalAssists": 7,
+        "Club": "Bournemouth",
+        "ClubID": 15
+    },
+    {
+        "FootballerName": "Kieran Trippier",
+        "TotalAssists": 7,
+        "Club": "Newcastle",
+        "ClubID": 4
+    },
+    {
+        "FootballerName": "Granit Xhaka",
+        "TotalAssists": 7,
+        "Club": "Arsenal",
+        "ClubID": 2
+    }
 ]

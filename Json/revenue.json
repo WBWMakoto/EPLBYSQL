@@ -1,12 +1,97 @@
 [
     {
-      "ClubName": "Arsenal",
-      "RevenueAmount": 1000000.00,
-      "ClubID": 2
+      "ClubID": 2,
+      "RevenueAmount": 167800000,
+      "ClubName": "Arsenal"
     },
     {
-      "ClubName": "Man Utd",
-      "RevenueAmount": 850000.50,
-      "ClubID": 3
+      "ClubID": 7,
+      "RevenueAmount": 156800000,
+      "ClubName": "Aston Villa"
+    },
+    {
+      "ClubID": 15,
+      "RevenueAmount": 139200000,
+      "ClubName": "Bournemouth"
+    },
+    {
+      "ClubID": 9,
+      "RevenueAmount": 152400000,
+      "ClubName": "Brentford"
+    },
+    {
+      "ClubID": 6,
+      "RevenueAmount": 159000000,
+      "ClubName": "Brighton"
+    },
+    {
+      "ClubID": 12,
+      "RevenueAmount": 145800000,
+      "ClubName": "Chelsea"
+    },
+    {
+      "ClubID": 11,
+      "RevenueAmount": 148000000,
+      "ClubName": "Crystal Palace"
+    },
+    {
+      "ClubID": 17,
+      "RevenueAmount": 134800000,
+      "ClubName": "Everton"
+    },
+    {
+      "ClubID": 10,
+      "RevenueAmount": 150200000,
+      "ClubName": "Fulham"
+    },
+    {
+      "ClubID": 19,
+      "RevenueAmount": 130400000,
+      "ClubName": "Leeds"
+    },
+    {
+      "ClubID": 18,
+      "RevenueAmount": 132600000,
+      "ClubName": "Leicester"
+    },
+    {
+      "ClubID": 1,
+      "RevenueAmount": 170000000,
+      "ClubName": "Man City"
+    },
+    {
+      "ClubID": 3,
+      "RevenueAmount": 165500000,
+      "ClubName": "Man Utd"
+    },
+    {
+      "ClubID": 4,
+      "RevenueAmount": 163400000,
+      "ClubName": "Newcastle"
+    },
+    {
+      "ClubID": 16,
+      "RevenueAmount": 137000000,
+      "ClubName": "Nottingham Forest"
+    },
+    {
+      "ClubID": 20,
+      "RevenueAmount": 128200000,
+      "ClubName": "Southampton"
+    },
+    {
+      "ClubID": 8,
+      "RevenueAmount": 154600000,
+      "ClubName": "Tottenham"
+    },
+    {
+      "ClubID": 14,
+      "RevenueAmount": 141400000,
+      "ClubName": "West Ham"
+    },
+    {
+      "ClubID": 13,
+      "RevenueAmount": 143600000,
+      "ClubName": "Wolves"
     }
-  ]
+]

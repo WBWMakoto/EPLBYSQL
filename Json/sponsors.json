@@ -1,14 +1,122 @@
 [
-    {
-      "SponsorID": 1,
-      "SponsorName": "Company X",
-      "ClubName": "Man City",
-      "ClubID": 1
-    },
-    {
-      "SponsorID": 2,
-      "SponsorName": "Company Y",
-      "ClubName": "Man Utd",
-      "ClubID": 3
-    }
-  ]
+  {
+    "SponsorID": 1,
+    "SponsorName": "Emirates",
+    "ClubName": "Arsenal",
+    "ClubID": 2
+  },
+  {
+    "SponsorID": 2,
+    "SponsorName": "Cazoo",
+    "ClubName": "Aston Villa",
+    "ClubID": 7
+  },
+   {
+    "SponsorID": 3,
+    "SponsorName": "Dafabet",
+    "ClubName": "Bournemouth",
+    "ClubID": 15
+  },
+  {
+    "SponsorID": 4,
+    "SponsorName": "Hollywoodbets",
+    "ClubName": "Brentford",
+    "ClubID": 9
+  },
+  {
+    "SponsorID": 5,
+    "SponsorName": "American Express",
+    "ClubName": "Brighton",
+    "ClubID": 6
+  },
+  {
+    "SponsorID": 6,
+    "SponsorName": "Three",
+    "ClubName": "Chelsea",
+    "ClubID": 12
+  },
+   {
+    "SponsorID": 7,
+    "SponsorName": "Cinch",
+    "ClubName": "Crystal Palace",
+    "ClubID": 11
+  },
+  {
+    "SponsorID": 8,
+    "SponsorName": "Stake.com",
+    "ClubName": "Everton",
+    "ClubID": 17
+  },
+  {
+    "SponsorID": 9,
+    "SponsorName": "W88",
+    "ClubName": "Fulham",
+    "ClubID": 10
+  },
+  {
+    "SponsorID": 10,
+    "SponsorName": "SBOTOP",
+    "ClubName": "Leeds",
+    "ClubID": 19
+  },
+   {
+    "SponsorID": 11,
+    "SponsorName": "FBS",
+    "ClubName": "Leicester",
+    "ClubID": 18
+  },
+  {
+    "SponsorID": 12,
+    "SponsorName": "Standard Chartered",
+    "ClubName": "Liverpool",
+    "ClubID": 3
+  },
+  {
+    "SponsorID": 13,
+    "SponsorName": "Etihad Airways",
+    "ClubName": "Man City",
+    "ClubID": 1
+  },
+  {
+    "SponsorID": 14,
+    "SponsorName": "TeamViewer",
+    "ClubName": "Man Utd",
+    "ClubID": 3
+  },
+   {
+    "SponsorID": 15,
+    "SponsorName": "FUN88",
+    "ClubName": "Newcastle",
+    "ClubID": 4
+  },
+  {
+    "SponsorID": 16,
+    "SponsorName": "UNHCR",
+    "ClubName": "Nottingham Forest",
+    "ClubID": 16
+  },
+  {
+    "SponsorID": 17,
+    "SponsorName": "Sportsbet.io",
+    "ClubName": "Southampton",
+    "ClubID": 20
+  },
+  {
+    "SponsorID": 18,
+    "SponsorName": "AIA",
+    "ClubName": "Tottenham",
+    "ClubID": 8
+  },
+   {
+    "SponsorID": 19,
+    "SponsorName": "Betway",
+    "ClubName": "West Ham",
+    "ClubID": 14
+  },
+  {
+    "SponsorID": 20,
+    "SponsorName": "AstroPay",
+    "ClubName": "Wolves",
+    "ClubID": 13
+  }
+]

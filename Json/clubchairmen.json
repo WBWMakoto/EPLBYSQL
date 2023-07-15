@@ -1,14 +1,122 @@
 [
-    {
-      "ChairmanID": 1,
-      "ChairmanName": "James Brown",
-      "ClubName": "Man Utd",
-      "ClubID": 3
-    },
-    {
-      "ChairmanID": 2,
-      "ChairmanName": "Sarah Johnson",
-      "ClubName": "Man City",
-      "ClubID": 1
-    }
-  ]
+  {
+    "ChairmanID": 1,
+    "ChairmanName": "Stan Kroenke",
+    "ClubName": "Arsenal",
+    "ClubID": 2
+  },
+  {
+    "ChairmanID": 2,
+    "ChairmanName": "Wes Edens",
+    "ClubName": "Aston Villa",
+    "ClubID": 7
+  },
+  {
+    "ChairmanID": 3,
+    "ChairmanName": "William P Foley",
+    "ClubName": "Bournemouth",
+    "ClubID": 15
+  },
+  {
+    "ChairmanID": 4,
+    "ChairmanName": "Matthew Benham",
+    "ClubName": "Brentford",
+    "ClubID": 9
+  },
+  {
+    "ChairmanID": 5,
+    "ChairmanName": "Tony Bloom",
+    "ClubName": "Brighton",
+    "ClubID": 6
+  },
+  {
+    "ChairmanID": 6,
+    "ChairmanName": "Todd Boehly",
+    "ClubName": "Chelsea",
+    "ClubID": 12
+  },
+  {
+    "ChairmanID": 7,
+    "ChairmanName": "John Textor",
+    "ClubName": "Crystal Palace",
+    "ClubID": 11
+  },
+  {
+    "ChairmanID": 8,
+    "ChairmanName": "Farhad Moshiri",
+    "ClubName": "Everton",
+    "ClubID": 17
+  },
+  {
+    "ChairmanID": 9,
+    "ChairmanName": "Shahid Khan",
+    "ClubName": "Fulham",
+    "ClubID": 10
+  },
+  {
+    "ChairmanID": 10,
+    "ChairmanName": "York Family",
+    "ClubName": "Leeds",
+    "ClubID": 19
+  },
+  {
+    "ChairmanID": 11,
+    "ChairmanName": "The Srivaddhanaprabha Family",
+    "ClubName": "Leicester",
+    "ClubID": 18
+  },
+  {
+    "ChairmanID": 12,
+    "ChairmanName": "John W Henry",
+    "ClubName": "Liverpool",
+    "ClubID": 3
+  },
+  {
+    "ChairmanID": 13,
+    "ChairmanName": "Abu Dhabi United Group",
+    "ClubName": "Man City",
+    "ClubID": 1
+  },
+  {
+    "ChairmanID": 14,
+    "ChairmanName": "Glazer Family",
+    "ClubName": "Man Utd",
+    "ClubID": 3
+  },
+  {
+    "ChairmanID": 15,
+    "ChairmanName": "Public Investment Fund",
+    "ClubName": "Newcastle",
+    "ClubID": 4
+  },
+  {
+    "ChairmanID": 16,
+    "ChairmanName": "Evangelos Marinakis",
+    "ClubName": "Nottingham Forest",
+    "ClubID": 16
+  },
+  {
+    "ChairmanID": 17,
+    "ChairmanName": "Sport Republic",
+    "ClubName": "Southampton",
+    "ClubID": 20
+  },
+  {
+    "ChairmanID": 18,
+    "ChairmanName": "Joe Lewis",
+    "ClubName": "Tottenham",
+    "ClubID": 8
+  },
+  {
+    "ChairmanID": 19,
+    "ChairmanName": "David Sullivan",
+    "ClubName": "West Ham",
+    "ClubID": 14
+  },
+  {
+    "ChairmanID": 20,
+    "ChairmanName": "Guo Guangchang",
+    "ClubName": "Wolves",
+    "ClubID": 13
+  }
+]

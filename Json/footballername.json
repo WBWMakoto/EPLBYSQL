@@ -1,16 +1,470 @@
 [
-    { 
-        "FootballerName":"Player1",
-        "Position":"Forward",
-        "Club":"Man Utd",
+    {
+        "FootballerName": "Erling Haaland",
+        "Position": "Forward",
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "Harry Kane",
+        "Position": "Forward",
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Ivan Toney",
+        "Position": "Forward",
+        "Club": "Brentford",
+        "ClubID": 9
+    },
+    {
+        "FootballerName": "Mohamed Salah",
+        "Position": "Forward",
+        "Club": "Liverpool",
+        "ClubID": 5
+    },
+    {
+        "FootballerName": "Callum Wilson",
+        "Position": "Forward",
+        "Club": "Newcastle",
+        "ClubID": 4
+    },
+    {
+        "FootballerName": "Marcus Rashford",
+        "Position": "Forward",
+        "Club": "Man Utd",
         "ClubID": 3
     },
     {
-        "FootballerName":"Player2",
-        "Position":"Midfielder",
-        "Club":"Arsenal",
+        "FootballerName": "Gabriel Martinelli",
+        "Position": "Forward",
+        "Club": "Arsenal",
         "ClubID": 2
+    },
+    {
+        "FootballerName": "Martin Odegaard",
+        "Position": "Midfielder",
+        "Club": "Arsenal",
+        "ClubID": 2
+    },
+    {
+        "FootballerName": "Ollie Watkins",
+        "Position": "Forward",
+        "Club": "Aston Villa",
+        "ClubID": 7
+    },
+    {
+        "FootballerName": "Aleksandar Mitrovic",
+        "Position": "Forward",
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Bukayo Saka",
+        "Position": "Midfielder",
+        "Club": "Arsenal",
+        "ClubID": 2
+    },
+    {
+        "FootballerName": "Harvey Barnes",
+        "Position": "Midfielder",
+        "Club": "Leicester",
+        "ClubID": 18
+    },
+    {
+        "FootballerName": "Rodrigo Moreno",
+        "Position": "Forward",
+        "Club": "Leeds",
+        "ClubID": 19
+    },
+    {
+        "FootballerName": "Miguel Almirón",
+        "Position": "Midfielder",
+        "Club": "Newcastle",
+        "ClubID": 4
+    },
+    {
+        "FootballerName": "Gabriel Jesus",
+        "Position": "Forward",
+        "Club": "Arsenal",
+        "ClubID": 2
+    },
+    {
+        "FootballerName": "Phil Foden",
+        "Position": "Midfielder",
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "Roberto Firmino",
+        "Position": "Forward",
+        "Club": "Liverpool",
+        "ClubID": 5
+    },
+    {
+        "FootballerName": "Alexander Isak",
+        "Position": "Forward",
+        "Club": "Newcastle",
+        "ClubID": 4
+    },
+    {
+        "FootballerName": "Alexis Mac Allister",
+        "Position": "Midfielder",
+        "Club": "Brighton",
+        "ClubID": 6
+    },
+    {
+        "FootballerName": "Eberechi Eze",
+        "Position": "Midfielder",
+        "Club": "Crystal Palace",
+        "ClubID": 11
+    },
+    {
+        "FootballerName": "James Maddison",
+        "Position": "Midfielder",
+        "Club": "Leicester",
+        "ClubID": 18
+    },
+    {
+        "FootballerName": "Son Heung-Min",
+        "Position": "Forward",
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Taiwo Awoniyi",
+        "Position": "Forward",
+        "Club": "Nottingham Forest",
+        "ClubID": 16
+    },
+    {
+        "FootballerName": "Kevin De Bruyne",
+        "Position": "Midfielder",
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "Leandro Trossard",
+        "Position": "Midfielder",
+        "Club": "Arsenal",
+        "ClubID": 2
+    },
+    {
+        "FootballerName": "Michael Olise",
+        "Position": "Midfielder",
+        "Club": "Crystal Palace",
+        "ClubID": 11
+    },
+    {
+        "FootballerName": "Riyad Mahrez",
+        "Position": "Forward",
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "Trent Alexander-Arnold",
+        "Position": "Defender",
+        "Club": "Liverpool",
+        "ClubID": 5
+    },
+    {
+        "FootballerName": "Christian Eriksen",
+        "Position": "Midfielder",
+        "Club": "Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName": "Ivan Perisic",
+        "Position": "Midfielder",
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Bruno Fernandes",
+        "Position": "Midfielder",
+        "Club": "Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName": "Andy Robertson",
+        "Position": "Defender",
+        "Club": "Liverpool",
+        "ClubID": 5
+    },
+    {
+        "FootballerName": "Pascal GroB",
+        "Position": "Midfielder",
+        "Club": "Brighton",
+        "ClubID": 6
+    },
+    {
+        "FootballerName": "Jack Grealish",
+        "Position": "Forward",
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "Jack Harrison",
+        "Position": "Midfielder",
+        "Club": "Leeds",
+        "ClubID": 19
+    },
+    {
+        "FootballerName": "Alex Iwobi",
+        "Position": "Forward",
+        "Club": "Everton",
+        "ClubID": 17
+    },
+    {
+        "FootballerName": "Dejan Kulusevski",
+        "Position": "Midfielder",
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Solly March",
+        "Position": "Midfielder",
+        "Club": "Brighton",
+        "ClubID": 6
+    },
+    {
+        "FootballerName": "Jacob Ramsey",
+        "Position": "Midfielder",
+        "Club": "Aston Villa",
+        "ClubID": 7
+    },
+    {
+        "FootballerName": "Dominic Solanke",
+        "Position": "Forward",
+        "Club": "Bournemouth",
+        "ClubID": 15
+    },
+    {
+        "FootballerName": "Kieran Trippier",
+        "Position": "Defender",
+        "Club": "Newcastle",
+        "ClubID": 4
+    },
+    {
+        "FootballerName": "Granit Xhaka",
+        "Position": "Midfielder",
+        "Club": "Arsenal",
+        "ClubID": 2
+    },
+    {
+        "FootballerName": "Joao Palhinha",
+        "Position": "Midfielder",
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Ruben Neves",
+        "Position": "Midfielder",
+        "Club": "Wolves",
+        "ClubID": 13
+    },
+    {
+        "FootballerName": "Joelinton",
+        "Position": "Defender",
+        "Club": "Newcastle",
+        "ClubID": 4
+    },
+    {
+        "FootballerName": "Adam Smith",
+        "Position": "Midfielder",
+        "Club": "Bournemouth",
+        "ClubID": 15
+    },
+    {
+        "FootballerName": "Fabinho",
+        "Position": "Midfielder",
+        "Club": "Liverpool",
+        "ClubID": 5
+    },
+    {
+        "FootballerName": "Nelson Semedo",
+        "Position": "Defender",
+        "Club": "Wolves",
+        "ClubID": 13
+    },
+    {
+        "FootballerName": "Moises Caicedo",
+        "Position": "Midfielder",
+        "Club": "Brighton",
+        "ClubID": 6
+    },
+    {
+        "FootballerName": "Conor Gallagher",
+        "Position": "Midfielder",
+        "Club": "Chelsea",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "Cheick Doucoure",
+        "Position": "Midfielder",
+        "Club": "Crystal Palace",
+        "ClubID": 11
+    },
+    {
+        "FootballerName": "Andreas Pereira",
+        "Position": "Midfielder",
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Cristian Romero",
+        "Position": "Defender",
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Amadou Onana",
+        "Position": "Midfielder",
+        "Club": "Everton",
+        "ClubID": 17
+    },
+    {
+        "FootballerName": "Mateo Kovacic",
+        "Position": "Midfielder",
+        "Club": "Chelsea",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "Antonee Robinson",
+        "Position": "Midfielder",
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Boubakary Soumare",
+        "Position": "Midfielder",
+        "Club": "Leicester",
+        "ClubID": 18
+    },
+    {
+        "FootballerName": "Rodrigo Bentancur",
+        "Position": "Midfielder",
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Romeo Lavia",
+        "Position": "Midfielder",
+        "Club": "Southampton",
+        "ClubID": 20
+    },
+    {
+        "FootballerName": "Kenny Tete",
+        "Position": "Defender",
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Scott McTominay",
+        "Position": "Midfielder",
+        "Club": "Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName": "Luke Shaw",
+        "Position": "Defender",
+        "Club": "Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName": "Casemiro",
+        "Position": "Midfielder",
+        "Club": "Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName": "Junior Firpo",
+        "Position": "Defender",
+        "Club": "Leeds",
+        "ClubID": 19
+    },
+    {
+        "FootballerName": "Abdoulaye Doucoure",
+        "Position": "Midfielder",
+        "Club": "Everton",
+        "ClubID": 17
+    },
+    {
+        "FootballerName": "Douglas Luiz",
+        "Position": "Midfielder",
+        "Club": "Aston Villa",
+        "ClubID": 7
+    },
+    {
+        "FootballerName": "Diego Costa",
+        "Position": "Forward",
+        "Club": "Wolves",
+        "ClubID": 13
+    },
+    {
+        "FootballerName": "Joao Felix",
+        "Position": "Forward",
+        "Club": "Chelsea",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "Joao Cancelo",
+        "Position": "Defender",
+        "Club": "Man City",
+        "ClubID": 1
+    },
+    {
+        "FootballerName": "Emerson Royal",
+        "Position": "Defender",
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Darwin Nunez",
+        "Position": "Forward",
+        "Club": "Liverpool",
+        "ClubID": 5
+    },
+    {
+        "FootballerName": "Lucas Moura",
+        "Position": "Forward",
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Nathaniel Chalobah",
+        "Position": "Defender",
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Tyrick Mitchell",
+        "Position": "Defender",
+        "Club": "Crystal Palace",
+        "ClubID": 11
+    },
+    {
+        "FootballerName": "Nick Pope",
+        "Position": "Goalkeeper",
+        "Club": "Newcastle",
+        "ClubID": 4
+    },
+    {
+        "FootballerName": "Nathan Collins",
+        "Position": "Defender",
+        "Club": "Wolves",
+        "ClubID": 13
+    },
+    {
+        "FootballerName": "Jonny Otto",
+        "Position": "Defender",
+        "Club": "Wolves",
+        "ClubID": 13
+    },
+    {
+        "FootballerName": "Declan Rice",
+        "Position": "Midfielder",
+        "Club": "Westham",
+        "ClubID": 14
     }
-
-
 ]

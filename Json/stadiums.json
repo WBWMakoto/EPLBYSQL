@@ -1,19 +1,162 @@
 [
-    {
-      "StadiumID": 1,
-      "StadiumName": "ABC Stadium",
-      "Capacity": 50000,
-      "ClubName": "Chelsea",
-      "City": "City A",
-      "ClubID": 12
-    },
-    {
-      "StadiumID": 2,
-      "StadiumName": "XYZ Stadium",
-      "Capacity": 60000,
-      "ClubName": "Man Utd",
-      "City": "City B",
-      "ClubID": 3
-    }
-  ]
-  
+	{
+		"StadiumID":"1",
+		"StadiumName":"Emirates Stadium",
+		"Capacity":"60704",
+		"ClubName":"Arsenal",
+		"ClubID":2,
+		"Location":"London"
+	},
+	{
+		"StadiumID":"2",
+		"StadiumName":"Villa Park",
+		"Capacity":"42657",
+		"ClubName":"Aston Villa",
+		"ClubID":7,
+		"Location":"Bỉrmingham"
+	},
+	{
+		"StadiumID":"3",
+		"StadiumName":"Dean Court",
+		"Capacity":"11307",
+		"ClubName":"Bournemouth",
+		"ClubID":15,
+		"Location":"Bournemouth"
+	},
+	{
+		"StadiumID":"4",
+		"StadiumName":"Dean Court",
+		"Capacity":"17250",
+		"ClubName":"Brentford",
+		"ClubID":9,
+		"Location":"London"
+  },
+	{
+		"StadiumID":"5",
+		"StadiumName":"Falmer Stadium",
+		"Capacity":"31780",
+		"ClubName":"Brighton",
+		"ClubID":6,
+		"Location":"Falmer"
+	},
+	{
+		"StadiumID":"6",
+		"StadiumName":"Stamford Bridge",
+		"Capacity":"40343",
+		"ClubName":"Chelsea",
+		"ClubID":12,
+		"Location":"London"
+	},
+	{
+		"StadiumID":"7",
+		"StadiumName":"Selhurst Park",
+		"Capacity":"25486",
+		"ClubName":"Crystal Palace",
+		"ClubID":11,
+		"Location":"London"
+	},
+	{
+		"StadiumID":"8",
+		"StadiumName":"Goodison Park",
+		"Capacity":"39414",
+		"ClubName":"Everton",
+		"ClubID":17,
+		"Location":"Liverpool"
+	},
+	{
+		"StadiumID":"9",
+		"StadiumName":"Craven Cottage",
+		"Capacity":"22384",
+		"ClubName":"Fulham",
+		"ClubID":10,
+		"Location":"London"
+	},
+	{
+		"StadiumID":"10",
+		"StadiumName":"Elland Road",
+		"Capacity":"37608",
+		"ClubName":"Leeds",
+		"ClubID":19,
+		"Location":"Leeds"
+	},
+	{
+		"StadiumID":"11",
+		"StadiumName":"King Power Stadium",
+		"Capacity":"32262",
+		"ClubName":"Leicester",
+		"ClubID":18,
+		"Location":"Leicester"
+	},
+	{
+		"StadiumID":"12",
+		"StadiumName":"Anfield",
+		"Capacity":"53394",
+		"ClubName":"Liverpool",
+		"ClubID":5,
+		"Location":"Liverpool"
+	},
+	{
+		"StadiumID":"13",
+		"StadiumName":"Etihad",
+		"Capacity":"53400",
+		"ClubName":"Man City",
+		"ClubID":1,
+		"Location":"Manchester"
+	},
+	{
+		"StadiumID":"14",
+		"StadiumName":"Old Trafford",
+		"Capacity":"74310",
+		"ClubName":"Man Utd",
+		"ClubID":3,
+		"Location":"Manchester"
+	},
+	{
+		"StadiumID":"15",
+		"StadiumName":"St James' Park",
+		"Capacity":"52305",
+		"ClubName":"Newcastle",
+		"ClubID":4,
+		"Location":"Newcastle"
+	},
+	{
+		"StadiumID":"16",
+		"StadiumName":"City Ground",
+		"Capacity":"30332",
+		"ClubName":"Nottingham Forest",
+		"ClubID":16,
+		"Location":"West Bridgford"
+	},
+	{
+		"StadiumID":"17",
+		"StadiumName":"St Mary's Stadium",
+		"Capacity":"32384",
+		"ClubName":"Southampton",
+		"ClubID":20,
+		"Location":"Southampton"
+	},
+	{
+		"StadiumID":"18",
+		"StadiumName":"Tottenham Hotspur Stadium",
+		"Capacity":"62850",
+		"ClubName":"Tottenham",
+		"ClubID":8,
+		"Location":"London"
+	},
+	{
+		"StadiumID":"19",
+		"StadiumName":"London Stadium",
+		"Capacity":"62500",
+		"ClubName":"Westham",
+		"ClubID":14,
+		"Location":"London"
+	},
+	{
+		"StadiumID":"20",
+		"StadiumName":"Molineux Stadium",
+		"Capacity":"31750",
+		"ClubName":"Wolves",
+		"ClubID":13,
+		"Location":"Wolverhampton"
+	}
+]

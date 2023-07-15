@@ -1,15 +1,122 @@
 [
-    {
-      "CoachID": 1,
-      "CoachName": "John Doe",
-      "ClubName": "Man Utd",
-      "ClubID": 3
-    },
-    {
-      "CoachID": 2,
-      "CoachName": "Jane Smith",
-      "ClubName": "Arsenal",
-      "ClubID": 2
-    }
-  ]
-  
+  {
+    "CoachID": 1,
+    "CoachName": "Mikel Arteta",
+    "ClubName": "Arsenal",
+    "ClubID": 2
+  },
+  {
+    "CoachID": 2,
+    "CoachName": "Unai Emery",
+    "ClubName": "Aston Villa",
+    "ClubID": 7
+  },
+{
+    "CoachID": 3,
+    "CoachName": "Gary O Neil",
+    "ClubName": "Bournemouth",
+    "ClubID": 15
+  },
+  {
+    "CoachID": 4,
+    "CoachName": "Thomas Frank",
+    "ClubName": "Brentford",
+    "ClubID": 9
+  },
+  {
+    "CoachID": 5,
+    "CoachName": "Roberto De Zerbi",
+    "ClubName": "Brighton",
+    "ClubID": 6
+  },
+  {
+    "CoachID": 6,
+    "CoachName": "Frank Lampard",
+    "ClubName": "Chelsea",
+    "ClubID": 12
+  },
+  {
+    "CoachID": 7,
+    "CoachName": "Roy Hodgson",
+    "ClubName": "Crystal Palace",
+    "ClubID": 11
+  },
+  {
+    "CoachID": 8,
+    "CoachName": "Sean Dyche",
+    "ClubName": "Everton",
+    "ClubID": 17
+  },
+  {
+    "CoachID": 9,
+    "CoachName": "Marco Silva",
+    "ClubName": "Fulham",
+    "ClubID": 10
+  },
+  {
+    "CoachID": 10,
+    "CoachName": "Sam Allardyce",
+    "ClubName": "Leeds",
+    "ClubID": 19
+  },
+  {
+    "CoachID": 11,
+    "CoachName": "Dean Smith",
+    "ClubName": "Leicester",
+    "ClubID": 18
+  },
+  {
+    "CoachID": 12,
+    "CoachName": "Jurgen Klopp",
+    "ClubName": "Liverpool",
+    "ClubID": 5
+  },
+  {
+    "CoachID": 13,
+    "CoachName": "Pep Guardiola",
+    "ClubName": "Man City",
+    "ClubID": 1
+  },
+  {
+    "CoachID": 14,
+    "CoachName": "Erik ten Hag",
+    "ClubName": "Man Utd",
+    "ClubID": 3
+  },
+  {
+    "CoachID": 15,
+    "CoachName": "Eddie Howe",
+    "ClubName": "Newcastle",
+    "ClubID": 4
+  },
+  {
+    "CoachID": 16,
+    "CoachName": "Steve Cooper",
+    "ClubName": "Nottingham Forest",
+    "ClubID": 16
+  },
+  {
+    "CoachID": 17,
+    "CoachName": "Rubén Selles",
+    "ClubName": "Southampton",
+    "ClubID": 20
+  },
+  {
+    "CoachID": 18,
+    "CoachName": "Ryan Mason",
+    "ClubName": "Tottenham",
+    "ClubID": 8
+  },
+  {
+    "CoachID": 19,
+    "CoachName": "David Moyes",
+    "ClubName": "West Ham",
+    "ClubID": 14
+  },
+  {
+    "CoachID": 20,
+    "CoachName": "Julen Lopetegui",
+    "ClubName": "Wolves",
+    "ClubID": 13
+  }
+]

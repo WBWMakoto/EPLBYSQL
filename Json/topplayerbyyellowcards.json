@@ -1,125 +1,146 @@
-File này làm theo mẫu clubID vừa được mẫu ở mẩu dự liệu 1 
-
 [
-	{
-		"FootballerName":"Joao Palhinha",
-		"TotalYellowCards":14,
-		"Club":"Fulham",
-		"ClubID":11
-	},
-	{
-		"FootballerName":"Ruben Neves",
-		"TotalYellowCards":12,
-		"Club":"Wolves"
-	},
-	{
-		"FootballerName":"Joelinton",
-		"TotalYellowCards":12,
-		"Club":"Newcastle"
-	},
-	{
-		"FootballerName":"Adam Smith",
-		"TotalYellowCards":11,
-		"Club":"Bournemouth"
-	},
-	{
-		"FootballerName":"Fabinho",
-		"TotalYellowCards":11,
-		"Club":"Liverpool"
-	},
-	{
-		"FootballerName":"Nelson Semedo",
-		"TotalYellowCards":11,
-		"Club":"Wolves"
-	},
-	{
-		"FootballerName":"Moises Caicedo",
-		"TotalYellowCards":10,
-		"Club":"Brighton"
-	},
-	{
-		"FootballerName":"Conor Gallagher",
-		"TotalYellowCards":10,
-		"Club":"Chelsea"
-	},
-	{
-		"FootballerName":"James Maddison",
-		"TotalYellowCards":9,
-		"Club":"Leicester"
-	},
-	{
-		"FootballerName":"Cheick Doucoure",
-		"TotalYellowCards":9,
-		"Club":"Crystal Palace"
-	},
-	{
-		"FootballerName":"Ivan Toney",
-		"TotalYellowCards":9,
-		"Club":"Brentford"
-	},
-	{
-		"FootballerName":"Andreas Pereira",
-		"TotalYellowCards":9,
-		"Club":"Fulham"
-	},
-	{
-		"FootballerName":"Cristian Romero",
-		"TotalYellowCards":9,
-		"Club":"Tottenham"
-	},
-	{
-		"FootballerName":"Amadou Onana",
-		"TotalYellowCards":9,
-		"Club":"Everton"
-	},
-	{
-		"FootballerName":"Marc Guehi",
-		"TotalYellowCards":8,
-		"Club":"Crystal Palace"
-	},
-	{
-		"FootballerName":"Mateo Kovacic",
-		"TotalYellowCards":8,
-		"Club":"Chelsea"
-	},
-	{
-		"FootballerName":"Antonee Robinson",
-		"TotalYellowCards":8,
-		"Club":"Fulham"
-	},
-	{
-		"FootballerName":"Boubakary Soumare",
-		"TotalYellowCards":8,
-		"Club":"Leicester"
-	},
-	{
-		"FootballerName":"Rodrigo Bentancur",
-		"TotalYellowCards":8,
-		"Club":"Tottenham"
-	},
-	{
-		"FootballerName":"Romeo Lavia",
-		"TotalYellowCards":8,
-		"Club":"Southampton"
-	},
-	{
-		"FootballerName":"Kenny Tete",
-		"TotalYellowCards":8,
-		"Club":"Fulham"
-	},
-	{
-		"FootballerName":"Scott McTominay",
-		"TotalYellowCards":8,
-		"Club":"Man Utd"
-	},
-	{
-		"FootballerName":"Alexis Mac Allister",
-		"TotalYellowCards":8,
-		"Club":"Brighton"
-	},
-	{
-		"FootballerName":"Luke Shaw",
-		"TotalYellowCards":8,
-		"Club":"Man Utd"
-	}
+    {
+        "FootballerName": "Joao Palhinha",
+        "TotalYellowCards": 14,
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Ruben Neves",
+        "TotalYellowCards": 12,
+        "Club": "Wolves",
+        "ClubID": 13
+    },
+    {
+        "FootballerName": "Joelinton",
+        "TotalYellowCards": 12,
+        "Club": "Newcastle",
+        "ClubID": 4
+    },
+    {
+        "FootballerName": "Adam Smith",
+        "TotalYellowCards": 11,
+        "Club": "Bournemouth",
+        "ClubID": 15
+    },
+    {
+        "FootballerName": "Fabinho",
+        "TotalYellowCards": 11,
+        "Club": "Liverpool",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "Nelson Semedo",
+        "TotalYellowCards": 11,
+        "Club": "Wolves",
+        "ClubID": 13
+    },
+    {
+        "FootballerName": "Moises Caicedo",
+        "TotalYellowCards": 10,
+        "Club": "Brighton",
+        "ClubID": 6
+    },
+    {
+        "FootballerName": "Conor Gallagher",
+        "TotalYellowCards": 10,
+        "Club": "Chelsea",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "James Maddison",
+        "TotalYellowCards": 9,
+        "Club": "Leicester",
+        "ClubID": 18
+    },
+    {
+        "FootballerName": "Cheick Doucoure",
+        "TotalYellowCards": 9,
+        "Club": "Crystal Palace",
+        "ClubID": 11
+    },
+    {
+        "FootballerName": "Ivan Toney",
+        "TotalYellowCards": 9,
+        "Club": "Brentford",
+        "ClubID": 9
+    },
+    {
+        "FootballerName": "Andreas Pereira",
+        "TotalYellowCards": 9,
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Cristian Romero",
+        "TotalYellowCards": 9,
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Amadou Onana",
+        "TotalYellowCards": 9,
+        "Club": "Everton",
+        "ClubID": 17
+    },
+    {
+        "FootballerName": "Marc Guehi",
+        "TotalYellowCards": 8,
+        "Club": "Crystal Palace",
+        "ClubID": 11
+    },
+    {
+        "FootballerName": "Mateo Kovacic",
+        "TotalYellowCards": 8,
+        "Club": "Chelsea",
+        "ClubID": 12
+    },
+    {
+        "FootballerName": "Antonee Robinson",
+        "TotalYellowCards": 8,
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Boubakary Soumare",
+        "TotalYellowCards": 8,
+        "Club": "Leicester",
+        "ClubID": 18
+    },
+    {
+        "FootballerName": "Rodrigo Bentancur",
+        "TotalYellowCards": 8,
+        "Club": "Tottenham",
+        "ClubID": 8
+    },
+    {
+        "FootballerName": "Romeo Lavia",
+        "TotalYellowCards": 8,
+        "Club": "Southampton",
+        "ClubID": 20
+    },
+    {
+        "FootballerName": "Kenny Tete",
+        "TotalYellowCards": 8,
+        "Club": "Fulham",
+        "ClubID": 10
+    },
+    {
+        "FootballerName": "Scott McTominay",
+        "TotalYellowCards": 8,
+        "Club": "Man Utd",
+        "ClubID": 3
+    },
+    {
+        "FootballerName": "Alexis Mac Allister",
+        "TotalYellowCards": 8,
+        "Club": "Brighton",
+        "ClubID": 6
+    },
+    {
+        "FootballerName": "Luke Shaw",
+        "TotalYellowCards": 8,
+        "Club": "Man Utd",
+        "ClubID": 3
+    }
 ]
