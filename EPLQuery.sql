@@ -137,7 +137,7 @@ CREATE TABLE Revenue (
   
   ClubID INT PRIMARY KEY,
   ClubName VARCHAR(255) ,
-  RevenueAmount DECIMAL(10, 2),
+  RevenueAmount FLOAT,
   CONSTRAINT FK_Revenue_ClubLeaderboard FOREIGN KEY (ClubID) REFERENCES ClubLeaderboard(ClubID)
 );
 
@@ -450,16 +450,17 @@ WITH (
 DECLARE @revenueJson NVARCHAR(MAX);
 
 SELECT @revenueJson = BulkColumn
-FROM OPENROWSET(BULK 'D:\HUFLIT\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\Cơ sở dữ liệu nâng cao\Đồ án\Json\revenue.json', SINGLE_CLOB) AS j;
+FROM OPENROWSET(BULK 'D:\\HUFLIT\\HUFLIT học kỳ 3 năm 2022 - 2023 (năm 2)\\Cơ sở dữ liệu nâng cao\\Đồ án\\Json\\revenue.json', SINGLE_CLOB) AS j;
 
 INSERT INTO Revenue (ClubID, ClubName, RevenueAmount)
-SELECT ClubID, ClubName, RevenueAmount
+SELECT ClubID, ClubName, ROUND(RevenueAmount, 2) AS RevenueAmount
 FROM OPENJSON(@revenueJson)
 WITH (
   ClubID INT '$.ClubID',
   ClubName VARCHAR(255) '$.ClubName',
-  RevenueAmount DECIMAL(10, 2) '$.RevenueAmount'
+  RevenueAmount FLOAT '$.RevenueAmount'
 );
+
 
 -- Query from data
 
