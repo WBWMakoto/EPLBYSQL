@@ -464,312 +464,317 @@ WITH (
 
 -- Query from data
 
--- 1. Select all columns from the ClubLeaderboard table, sorted by TotalPoints in descending order.
+
+
+-- 1. Chọn tất cả cột từ bảng ClubLeaderboard, sắp xếp theo TotalPoints giảm dần.
 SELECT * FROM ClubLeaderboard ORDER BY TotalPoints DESC;
 
--- 2. Select the CoachName and ClubName columns from the Coaches table.
+-- 2. Chọn cột CoachName và ClubName từ bảng Coaches.
 SELECT CoachName, ClubName FROM Coaches;
 
--- 3. Select the RefereeName and Age columns from the Referees table.
+-- 3. Chọn cột RefereeName và Age từ bảng Referees.
 SELECT RefereeName, Age FROM Referees;
 
--- 4. Select the SponsorName from the Sponsors table where the ClubName is equal to 'Club Name'.
+-- 4. Chọn cột SponsorName từ bảng Sponsors khi ClubName bằng 'Club Name'.
 SELECT SponsorName FROM Sponsors WHERE ClubName = 'Club Name';
 
--- 5. Select the ChairmanName from the ClubChairmen table where the ClubName is equal to 'Club Name'.
+-- 5. Chọn cột ChairmanName từ bảng ClubChairmen khi ClubName bằng 'Club Name'.
 SELECT ChairmanName FROM ClubChairmen WHERE ClubName = 'Club Name';
 
--- 6. Select the ClubName and RevenueAmount columns from the Revenue table.
+-- 6. Chọn cột ClubName và RevenueAmount từ bảng Revenue.
 SELECT ClubName, RevenueAmount FROM Revenue;
 
--- 7. Select all columns from the News table where the Author is equal to 'Author Name'.
+-- 7. Chọn tất cả cột từ bảng News khi Author bằng 'Author Name'.
 SELECT * FROM News WHERE Author = 'Author Name';
 
--- 8. Select the FootballerName and Position columns from the Footballer table where the ClubName is equal to 'Club Name'.
+-- 8. Chọn cột FootballerName và Position từ bảng Footballer khi ClubName bằng 'Club Name'.
 SELECT FootballerName, Position FROM Footballer WHERE ClubName = 'Club Name';
 
--- 9. Select all columns from the Matches table where the HomeTeamScore is greater than the AwayTeamScore.
+-- 9. Chọn tất cả cột từ bảng Matches khi HomeTeamScore lớn hơn AwayTeamScore.
 SELECT * FROM Matches WHERE HomeTeamScore > AwayTeamScore;
 
--- 10. Select the ClubName from the Stadiums table where the City is equal to 'City Name'.
+-- 10. Chọn cột ClubName từ bảng Stadiums khi City bằng 'City Name'.
 SELECT ClubName FROM Stadiums WHERE City = 'City Name';
 
--- 11. Select all columns from the Matches table where the [Group] is equal to 'Group Name'.
+-- 11. Chọn tất cả cột từ bảng Matches khi [Group] bằng 'Group Name'.
 SELECT * FROM Matches WHERE [Group] = 'Group Name';
 
--- 12. Select the ClubName and TotalMatches columns from the ClubLeaderboard table.
+-- 12. Chọn cột ClubName và TotalMatches từ bảng ClubLeaderboard.
 SELECT ClubName, TotalMatches FROM ClubLeaderboard;
 
--- 13. Select the FootballerName and TotalGoals columns from the TopGoalsByPlayer table where the TotalGoals is greater than 10.
+-- 13. Chọn cột FootballerName và TotalGoals từ bảng TopGoalsByPlayer khi TotalGoals lớn hơn 10.
 SELECT FootballerName, TotalGoals FROM TopGoalsByPlayer WHERE TotalGoals > 10;
 
--- 14. Select the ClubName from the ClubLeaderboard table where the Losses is equal to 0.
+-- 14. Chọn cột ClubName từ bảng ClubLeaderboard khi Losses bằng 0.
 SELECT ClubName FROM ClubLeaderboard WHERE Losses = 0;
 
--- 15. Select the CoachName from the Coaches table, grouped by CoachName, having the COUNT(DISTINCT ClubName) greater than 1.
+-- 15. Chọn cột CoachName từ bảng Coaches, nhóm theo CoachName, có COUNT(DISTINCT ClubName) lớn hơn 1.
 SELECT CoachName FROM Coaches GROUP BY CoachName HAVING COUNT(DISTINCT ClubName) > 1;
 
--- 16. Select the RefereeName and Age from the Referees table where the Age is less than 40.
+-- 16. Chọn cột RefereeName và Age từ bảng Referees khi Age nhỏ hơn 40.
 SELECT RefereeName, Age FROM Referees WHERE Age < 40;
 
--- 17. Select the ClubName and RevenueAmount columns from the Revenue table where the RevenueAmount is greater than 1000000.
+-- 17. Chọn cột ClubName và RevenueAmount từ bảng Revenue khi RevenueAmount lớn hơn 1000000.
 SELECT ClubName, RevenueAmount FROM Revenue WHERE RevenueAmount > 1000000;
 
--- 18. Select all columns from the Matches table where the Location is equal to 'Stadium Name'.
+-- 18. Chọn tất cả cột từ bảng Matches khi Location bằng 'Stadium Name'.
 SELECT * FROM Matches WHERE Location = 'Stadium Name';
 
--- 19. Select the MatchNumber, DateUtc, HomeTeam, AwayTeam, and HomeTeamScore from the Matches table where the HomeTeamScore is greater than the AwayTeamScore.
+-- 19. Chọn cột MatchNumber, DateUtc, HomeTeam, AwayTeam và HomeTeamScore từ bảng Matches khi HomeTeamScore lớn hơn AwayTeamScore.
 SELECT MatchNumber, DateUtc, HomeTeam, AwayTeam, HomeTeamScore
 FROM Matches
 WHERE HomeTeamScore > AwayTeamScore;
 
--- 20. Select the ClubName, RankNumber, and TotalPoints from the ClubLeaderboard table where the TotalPoints is equal to the highest number of points.
+-- 20. Chọn cột ClubName, RankNumber và TotalPoints từ bảng ClubLeaderboard khi TotalPoints bằng số điểm cao nhất.
 SELECT ClubName, RankNumber, TotalPoints
 FROM ClubLeaderboard
 WHERE TotalPoints = (SELECT MAX(TotalPoints) FROM ClubLeaderboard);
 
--- 21. Select the FootballerName and TotalAssists columns from the TopAssistsByPlayer table where the TotalAssists is greater than 5.
+-- 21. Chọn cột FootballerName và TotalAssists từ bảng TopAssistsByPlayer khi TotalAssists lớn hơn 5.
 SELECT FootballerName, TotalAssists FROM TopAssistsByPlayer WHERE TotalAssists > 5;
 
--- 22. Select the FootballerName and TotalRedCards columns from the TopPlayerByRedCards table where the TotalRedCards is greater than 0.
+-- 22. Chọn cột FootballerName và TotalRedCards từ bảng TopPlayerByRedCards khi TotalRedCards lớn hơn 0.
 SELECT FootballerName, TotalRedCards FROM TopPlayerByRedCards WHERE TotalRedCards > 0;
 
--- 23. Select the FootballerName and TotalYellowCards columns from the TopPlayerByYellowCards table where the TotalYellowCards is greater than 0.
+-- 23. Chọn cột FootballerName và TotalYellowCards từ bảng TopPlayerByYellowCards khi TotalYellowCards lớn hơn 0.
 SELECT FootballerName, TotalYellowCards FROM TopPlayerByYellowCards WHERE TotalYellowCards > 0;
 
--- 24. Select the FootballerName and Position columns from the Footballer table where the Position is equal to 'Forward'.
+-- 24. Chọn cột FootballerName và Position từ bảng Footballer khi Position bằng 'Forward'.
 SELECT FootballerName, Position FROM Footballer WHERE Position = 'Forward';
 
--- 25. Select the ClubName and TotalEPLTrophy columns from the HistoricalAchievement table where the TotalEPLTrophy is greater than 0.
+-- 25. Chọn cột ClubName và TotalEPLTrophy từ bảng HistoricalAchievement khi TotalEPLTrophy lớn hơn 0.
 SELECT ClubName, TotalEPLTrophy FROM HistoricalAchievement WHERE TotalEPLTrophy > 0;
 
--- 26. Select the StadiumName and Capacity columns from the Stadiums table where the Capacity is greater than 50000.
+-- 26. Chọn cột StadiumName và Capacity từ bảng Stadiums khi Capacity lớn hơn 50000.
 SELECT StadiumName, Capacity FROM Stadiums WHERE Capacity > 50000;
 
--- 27. Select the CoachName, ClubName, and RankNumber columns from the Coaches table, joined with the ClubLeaderboard table on ClubID, sorted by RankNumber in ascending order.
+-- 27. Chọn cột CoachName, ClubName và RankNumber từ bảng Coaches, kết hợp với bảng ClubLeaderboard theo ClubID, sắp xếp theo RankNumber tăng dần.
 SELECT C.CoachName, C.ClubName, L.RankNumber
 FROM Coaches C
 JOIN ClubLeaderboard L ON C.ClubID = L.ClubID
 ORDER BY L.RankNumber ASC;
 
--- 28. Select the RefereeName and Age columns from the Referees table where the Age is between 30 and 50.
+-- 28. Chọn cột RefereeName và Age từ bảng Referees khi Age nằm trong khoảng từ 30 đến 50.
 SELECT RefereeName, Age FROM Referees WHERE Age BETWEEN 30 AND 50;
 
--- 29. Select the SponsorName and ClubName columns from the Sponsors table where the SponsorName contains the word 'Insurance'.
+-- 29. Chọn cột SponsorName và ClubName từ bảng Sponsors khi SponsorName chứa từ 'Insurance'.
 SELECT SponsorName, ClubName FROM Sponsors WHERE SponsorName LIKE '%Insurance%';
 
--- 30. Select the ChairmanName and ClubName columns from the ClubChairmen table where the ChairmanName starts with 'John'.
+-- 30. Chọn cột ChairmanName và ClubName từ bảng ClubChairmen khi ChairmanName bắt đầu bằng 'John'.
 SELECT ChairmanName, ClubName FROM ClubChairmen WHERE ChairmanName LIKE 'John%';
 
--- 31. Select the ClubName and RevenueAmount columns from the Revenue table where the RevenueAmount is between 1000000 and 5000000.
+-- 31. Chọn cột ClubName và RevenueAmount từ bảng Revenue khi RevenueAmount nằm trong khoảng từ 1000000 đến 5000000.
 SELECT ClubName, RevenueAmount FROM Revenue WHERE RevenueAmount BETWEEN 1000000 AND 5000000;
 
--- 32. Select the NewsTitle and TimePublished columns from the News table, sorted by TimePublished in descending order.
+-- 32. Chọn cột NewsTitle và TimePublished từ bảng News, sắp xếp theo TimePublished giảm dần.
 SELECT NewsTitle, TimePublished FROM News ORDER BY TimePublished DESC;
 
--- 33. Select the MatchNumber, DateUtc, RoundNumber, and Location columns from the Matches table where the RoundNumber is greater than or equal to 10.
+-- 33. Chọn cột MatchNumber, DateUtc, RoundNumber và Location từ bảng Matches khi RoundNumber lớn hơn hoặc bằng 10.
 SELECT MatchNumber, DateUtc, RoundNumber, Location FROM Matches WHERE RoundNumber >= 10;
 
--- 34. Select the ClubName and TotalPoints columns from the ClubLeaderboard table, sorted by TotalPoints in descending order, and limit the result to 10 rows.
+-- 34. Chọn cột ClubName và TotalPoints từ bảng ClubLeaderboard, sắp xếp theo TotalPoints giảm dần, và giới hạn kết quả cho 10 dòng.
+SELECT TOP 10 ClubName, TotalPoints
+FROM ClubLeaderboard
+ORDER BY TotalPoints DESC;
 
--- 35. Select the FootballerName and Position from the Footballer table.
+-- 35. Chọn cột FootballerName và Position từ bảng Footballer.
 SELECT FootballerName, Position FROM Footballer;
 
--- 36. Select the ClubName and Capacity from the Stadiums table.
+-- 36. Chọn cột ClubName và Capacity từ bảng Stadiums.
 SELECT ClubName, Capacity FROM Stadiums;
 
--- 37. Select the CoachName and ClubName from the Coaches table.
+-- 37. Chọn cột CoachName và ClubName từ bảng Coaches.
 SELECT CoachName, ClubName FROM Coaches;
 
--- 38. Select the RefereeName and Age from the Referees table.
+-- 38. Chọn cột RefereeName và Age từ bảng Referees.
 SELECT RefereeName, Age FROM Referees;
 
--- 39. Select the SponsorName and ClubName from the Sponsors table.
+-- 39. Chọn cột SponsorName và ClubName từ bảng Sponsors.
 SELECT SponsorName, ClubName FROM Sponsors;
 
--- 40. Select the ChairmanName and ClubName from the ClubChairmen table.
+-- 40. Chọn cột ChairmanName và ClubName từ bảng ClubChairmen.
 SELECT ChairmanName, ClubName FROM ClubChairmen;
 
--- 41. Select the ClubID, RankNumber, and ClubName from the ClubLeaderboard table.
+-- 41. Chọn cột ClubID, RankNumber và ClubName từ bảng ClubLeaderboard.
 SELECT ClubID, RankNumber, ClubName FROM ClubLeaderboard;
 
--- 42. Select the NewsTitle, NewsContent, and TimePublished from the News table.
+-- 42. Chọn cột NewsTitle, NewsContent và TimePublished từ bảng News.
 SELECT NewsTitle, NewsContent, TimePublished FROM News;
 
--- 43. Select the MatchNumber, DateUtc, and RoundNumber from the Matches table.
+-- 43. Chọn cột MatchNumber, DateUtc và RoundNumber từ bảng Matches.
 SELECT MatchNumber, DateUtc, RoundNumber FROM Matches;
 
--- 44. Select the FootballerName, TotalGoals, and ClubName from the TopGoalsByPlayer table.
+-- 44. Chọn cột FootballerName, TotalGoals và ClubName từ bảng TopGoalsByPlayer.
 SELECT FootballerName, TotalGoals, ClubName FROM TopGoalsByPlayer;
 
--- 45. Select the FootballerName, TotalAssists, and ClubName from the TopAssistsByPlayer table.
+-- 45. Chọn cột FootballerName, TotalAssists và ClubName từ bảng TopAssistsByPlayer.
 SELECT FootballerName, TotalAssists, ClubName FROM TopAssistsByPlayer;
 
--- 46. Select the FootballerName, TotalRedCards, and ClubName from the TopPlayerByRedCards table.
+-- 46. Chọn cột FootballerName, TotalRedCards và ClubName từ bảng TopPlayerByRedCards.
 SELECT FootballerName, TotalRedCards, ClubName FROM TopPlayerByRedCards;
 
--- 47. Select the FootballerName, TotalYellowCards, and ClubName from the TopPlayerByYellowCards table.
+-- 47. Chọn cột FootballerName, TotalYellowCards và ClubName từ bảng TopPlayerByYellowCards.
 SELECT FootballerName, TotalYellowCards, ClubName FROM TopPlayerByYellowCards;
 
--- 48. Select the ClubID, RankNumber, ClubName, and TotalEPLTrophy from the HistoricalAchievement table.
+-- 48. Chọn cột ClubID, RankNumber, ClubName và TotalEPLTrophy từ bảng HistoricalAchievement.
 SELECT ClubID, RankNumber, ClubName, TotalEPLTrophy FROM HistoricalAchievement;
 
--- 49. Select the ClubID, ClubName, and RevenueAmount from the Revenue table.
+-- 49. Chọn cột ClubID, ClubName và RevenueAmount từ bảng Revenue.
 SELECT ClubID, ClubName, RevenueAmount FROM Revenue;
 
--- 50. Select the StadiumName, Capacity, ClubName, and City from the Stadiums table.
+-- 50. Chọn cột StadiumName, Capacity, ClubName và City từ bảng Stadiums.
 SELECT StadiumName, Capacity, ClubName, City FROM Stadiums;
 
--- 51. Select the CoachID, CoachName, ClubName, and ClubID from the Coaches table.
+-- 51. Chọn cột CoachID, CoachName, ClubName và ClubID từ bảng Coaches.
 SELECT CoachID, CoachName, ClubName, ClubID FROM Coaches;
 
--- 52. Select the RefereeID, RefereeName, and Age from the Referees table.
+-- 52. Chọn cột RefereeID, RefereeName và Age từ bảng Referees.
 SELECT RefereeID, RefereeName, Age FROM Referees;
 
--- 53. Select the SponsorID, SponsorName, ClubName, and ClubID from the Sponsors table.
+-- 53. Chọn cột SponsorID, SponsorName, ClubName và ClubID từ bảng Sponsors.
 SELECT SponsorID, SponsorName, ClubName, ClubID FROM Sponsors;
 
--- 54. Select the ChairmanID, ChairmanName, ClubName, and ClubID from the ClubChairmen table.
+-- 54. Chọn cột ChairmanID, ChairmanName, ClubName và ClubID từ bảng ClubChairmen.
 SELECT ChairmanID, ChairmanName, ClubName, ClubID FROM ClubChairmen;
 
--- 55. Select the ClubID, RankNumber, ClubName, and TotalMatches from the ClubLeaderboard table.
+-- 55. Chọn cột ClubID, RankNumber, ClubName và TotalMatches từ bảng ClubLeaderboard.
 SELECT ClubID, RankNumber, ClubName, TotalMatches FROM ClubLeaderboard;
 
--- 56. Select the NewsID, NewsTitle, NewsContent, and TimePublished from the News table.
+-- 56. Chọn cột NewsID, NewsTitle, NewsContent và TimePublished từ bảng News.
 SELECT NewsID, NewsTitle, NewsContent, TimePublished FROM News;
 
--- 57. Select the MatchNumber, DateUtc, RoundNumber, and Location from the Matches table.
+-- 57. Chọn cột MatchNumber, DateUtc, RoundNumber và Location từ bảng Matches.
 SELECT MatchNumber, DateUtc, RoundNumber, Location FROM Matches;
 
--- 58. Select the FootballerName, TotalGoals, ClubName, and ClubID from the TopGoalsByPlayer table.
+-- 58. Chọn cột FootballerName, TotalGoals, ClubName và ClubID từ bảng TopGoalsByPlayer.
 SELECT FootballerName, TotalGoals, ClubName, ClubID FROM TopGoalsByPlayer;
 
--- 59. Select the FootballerName, TotalAssists, ClubName, and ClubID from the TopAssistsByPlayer table.
+-- 59. Chọn cột FootballerName, TotalAssists, ClubName và ClubID từ bảng TopAssistsByPlayer.
 SELECT FootballerName, TotalAssists, ClubName, ClubID FROM TopAssistsByPlayer;
 
--- 60. Select the FootballerName, TotalRedCards, ClubName, and ClubID from the TopPlayerByRedCards table.
+-- 60. Chọn cột FootballerName, TotalRedCards, ClubName và ClubID từ bảng TopPlayerByRedCards.
 SELECT FootballerName, TotalRedCards, ClubName, ClubID FROM TopPlayerByRedCards;
 
--- 61. Select the FootballerName, TotalYellowCards, ClubName, and ClubID from the TopPlayerByYellowCards table.
+-- 61. Chọn cột FootballerName, TotalYellowCards, ClubName và ClubID từ bảng TopPlayerByYellowCards.
 SELECT FootballerName, TotalYellowCards, ClubName, ClubID FROM TopPlayerByYellowCards;
 
--- 62. Select the ClubID, RankNumber, ClubName, and TotalEPLTrophy from the HistoricalAchievement table.
+-- 62. Chọn cột ClubID, RankNumber, ClubName và TotalEPLTrophy từ bảng HistoricalAchievement.
 SELECT ClubID, RankNumber, ClubName, TotalEPLTrophy FROM HistoricalAchievement;
 
--- 63. Select the ClubID, ClubName, RevenueAmount from the Revenue table.
+-- 63. Chọn cột ClubID, ClubName và RevenueAmount từ bảng Revenue.
 SELECT ClubID, ClubName, RevenueAmount FROM Revenue;
 
--- 64. Select the StadiumName, Capacity, ClubName, City from the Stadiums table.
+-- 64. Chọn cột StadiumName, Capacity, ClubName và City từ bảng Stadiums.
 SELECT StadiumName, Capacity, ClubName, City FROM Stadiums;
 
--- 65. Select the CoachID, CoachName, ClubName, ClubID from the Coaches table.
+-- 65. Chọn cột CoachID, CoachName, ClubName và ClubID từ bảng Coaches.
 SELECT CoachID, CoachName, ClubName, ClubID FROM Coaches;
 
--- 66. Select the RefereeID, RefereeName, Age from the Referees table.
+-- 66. Chọn cột RefereeID, RefereeName và Age từ bảng Referees.
 SELECT RefereeID, RefereeName, Age FROM Referees;
 
--- 67. Select the SponsorID, SponsorName, ClubName, ClubID from the Sponsors table.
+-- 67. Chọn cột SponsorID, SponsorName, ClubName và ClubID từ bảng Sponsors.
 SELECT SponsorID, SponsorName, ClubName, ClubID FROM Sponsors;
 
--- 68. Select the ChairmanID, ChairmanName, ClubName, ClubID from the ClubChairmen table.
+-- 68. Chọn cột ChairmanID, ChairmanName, ClubName và ClubID từ bảng ClubChairmen.
 SELECT ChairmanID, ChairmanName, ClubName, ClubID FROM ClubChairmen;
 
--- 69. Select the ClubID, RankNumber, ClubName, TotalMatches from the ClubLeaderboard table.
+-- 69. Chọn cột ClubID, RankNumber, ClubName và TotalMatches từ bảng ClubLeaderboard.
 SELECT ClubID, RankNumber, ClubName, TotalMatches FROM ClubLeaderboard;
 
--- 70. Select the NewsID, NewsTitle, NewsContent, TimePublished from the News table.
+-- 70. Chọn cột NewsID, NewsTitle, NewsContent và TimePublished từ bảng News.
 SELECT NewsID, NewsTitle, NewsContent, TimePublished FROM News;
 
--- 71. Select the MatchNumber, DateUtc, RoundNumber, Location from the Matches table.
+-- 71. Chọn cột MatchNumber, DateUtc, RoundNumber và Location từ bảng Matches.
 SELECT MatchNumber, DateUtc, RoundNumber, Location FROM Matches;
 
--- 72. Select the FootballerName, TotalGoals, ClubName, ClubID from the TopGoalsByPlayer table.
+-- 72. Chọn cột FootballerName, TotalGoals, ClubName và ClubID từ bảng TopGoalsByPlayer.
 SELECT FootballerName, TotalGoals, ClubName, ClubID FROM TopGoalsByPlayer;
 
--- 73. Select the FootballerName, TotalAssists, ClubName, ClubID from the TopAssistsByPlayer table.
+-- 73. Chọn cột FootballerName, TotalAssists, ClubName và ClubID từ bảng TopAssistsByPlayer.
 SELECT FootballerName, TotalAssists, ClubName, ClubID FROM TopAssistsByPlayer;
 
--- 74. Select the FootballerName, TotalRedCards, ClubName, ClubID from the TopPlayerByRedCards table.
+-- 74. Chọn cột FootballerName, TotalRedCards, ClubName và ClubID từ bảng TopPlayerByRedCards.
 SELECT FootballerName, TotalRedCards, ClubName, ClubID FROM TopPlayerByRedCards;
 
--- 75. Select the FootballerName, TotalYellowCards, ClubName, ClubID from the TopPlayerByYellowCards table.
+-- 75. Chọn cột FootballerName, TotalYellowCards, ClubName và ClubID từ bảng TopPlayerByYellowCards.
 SELECT FootballerName, TotalYellowCards, ClubName, ClubID FROM TopPlayerByYellowCards;
 
--- 76. Select the ClubID, RankNumber, ClubName, TotalEPLTrophy from the HistoricalAchievement table.
+-- 76. Chọn cột ClubID, RankNumber, ClubName và TotalEPLTrophy từ bảng HistoricalAchievement.
 SELECT ClubID, RankNumber, ClubName, TotalEPLTrophy FROM HistoricalAchievement;
 
--- 77. Select the ClubID, ClubName, RevenueAmount from the Revenue table.
+-- 77. Chọn cột ClubID, ClubName và RevenueAmount từ bảng Revenue.
 SELECT ClubID, ClubName, RevenueAmount FROM Revenue;
 
--- 78. Select the StadiumName, Capacity, ClubName, City from the Stadiums table.
+-- 78. Chọn cột StadiumName, Capacity, ClubName và City từ bảng Stadiums.
 SELECT StadiumName, Capacity, ClubName, City FROM Stadiums;
 
--- 79. Select the CoachID, CoachName, ClubName, ClubID from the Coaches table.
+-- 79. Chọn cột CoachID, CoachName, ClubName và ClubID từ bảng Coaches.
 SELECT CoachID, CoachName, ClubName, ClubID FROM Coaches;
 
--- 80. Select the RefereeID, RefereeName, Age from the Referees table.
+-- 80. Chọn cột RefereeID, RefereeName, Age từ bảng Referees.
 SELECT RefereeID, RefereeName, Age FROM Referees;
 
--- 81. Select all columns from the ClubLeaderboard table, sorted by TotalPoints in descending order.
+-- 81. Chọn tất cả cột từ bảng ClubLeaderboard, sắp xếp theo TotalPoints giảm dần.
 SELECT * FROM ClubLeaderboard ORDER BY TotalPoints DESC;
 
--- 82. Select the CoachName and ClubName columns from the Coaches table.
+-- 82. Chọn cột CoachName và ClubName từ bảng Coaches.
 SELECT CoachName, ClubName FROM Coaches;
 
--- 83. Select the RefereeName and Age columns from the Referees table.
+-- 83. Chọn cột RefereeName và Age từ bảng Referees.
 SELECT RefereeName, Age FROM Referees;
 
--- 84. Select the SponsorName from the Sponsors table where the ClubName is equal to 'Club Name'.
+-- 84. Chọn cột SponsorName từ bảng Sponsors khi ClubName bằng 'Club Name'.
 SELECT SponsorName FROM Sponsors WHERE ClubName = 'Club Name';
 
--- 85. Select the ChairmanName from the ClubChairmen table where the ClubName is equal to 'Club Name'.
+-- 85. Chọn cột ChairmanName từ bảng ClubChairmen khi ClubName bằng 'Club Name'.
 SELECT ChairmanName FROM ClubChairmen WHERE ClubName = 'Club Name';
 
--- 86. Select the ClubName and RevenueAmount columns from the Revenue table.
+-- 86. Chọn cột ClubName và RevenueAmount từ bảng Revenue.
 SELECT ClubName, RevenueAmount FROM Revenue;
 
--- 87. Select all columns from the News table where the Author is equal to 'Author Name'.
+-- 87. Chọn tất cả cột từ bảng News khi Author bằng 'Author Name'.
 SELECT * FROM News WHERE Author = 'Author Name';
 
--- 88. Select the FootballerName and Position columns from the Footballer table where the ClubName is equal to 'Club Name'.
+-- 88. Chọn cột FootballerName và Position từ bảng Footballer khi ClubName bằng 'Club Name'.
 SELECT FootballerName, Position FROM Footballer WHERE ClubName = 'Club Name';
 
--- 89. Select all columns from the Matches table where the HomeTeamScore is greater than the AwayTeamScore.
+-- 89. Chọn tất cả cột từ bảng Matches khi HomeTeamScore lớn hơn AwayTeamScore.
 SELECT * FROM Matches WHERE HomeTeamScore > AwayTeamScore;
 
--- 90. Select the ClubName from the Stadiums table where the City is equal to 'City Name'.
+-- 90. Chọn cột ClubName từ bảng Stadiums khi City bằng 'City Name'.
 SELECT ClubName FROM Stadiums WHERE City = 'City Name';
 
--- 91. Select all columns from the Matches table where the [Group] is equal to 'Group Name'.
+-- 91. Chọn tất cả cột từ bảng Matches khi [Group] bằng 'Group Name'.
 SELECT * FROM Matches WHERE [Group] = 'Group Name';
 
--- 92. Select the ClubName and TotalMatches columns from the ClubLeaderboard table.
+-- 92. Chọn cột ClubName và TotalMatches từ bảng ClubLeaderboard.
 SELECT ClubName, TotalMatches FROM ClubLeaderboard;
 
--- 93. Select the FootballerName and TotalGoals columns from the TopGoalsByPlayer table where the TotalGoals is greater than 10.
+-- 93. Chọn cột FootballerName và TotalGoals từ bảng TopGoalsByPlayer khi TotalGoals lớn hơn 10.
 SELECT FootballerName, TotalGoals FROM TopGoalsByPlayer WHERE TotalGoals > 10;
 
--- 94. Select the ClubName from the ClubLeaderboard table where the Losses is equal to 0.
+-- 94. Chọn cột ClubName từ bảng ClubLeaderboard khi Losses bằng 0.
 SELECT ClubName FROM ClubLeaderboard WHERE Losses = 0;
 
--- 95. Select the CoachName from the Coaches table, grouped by CoachName, having the COUNT(DISTINCT ClubName) greater than 1.
+-- 95. Chọn cột CoachName từ bảng Coaches, nhóm theo CoachName, có số lượng DISTINCT ClubName lớn hơn 1.
 SELECT CoachName FROM Coaches GROUP BY CoachName HAVING COUNT(DISTINCT ClubName) > 1;
 
--- 96. Select the RefereeName and Age from the Referees table where the Age is less than 40.
+-- 96. Chọn cột RefereeName và Age từ bảng Referees khi Age nhỏ hơn 40.
 SELECT RefereeName, Age FROM Referees WHERE Age < 40;
 
--- 97. Select the ClubName and RevenueAmount columns from the Revenue table where the RevenueAmount is greater than 1000000.
+-- 97. Chọn cột ClubName và RevenueAmount từ bảng Revenue khi RevenueAmount lớn hơn 1000000.
 SELECT ClubName, RevenueAmount FROM Revenue WHERE RevenueAmount > 1000000;
 
--- 98. Select all columns from the Matches table where the Location is equal to 'Stadium Name'.
+-- 98. Chọn tất cả cột từ bảng Matches khi Location bằng 'Stadium Name'.
 SELECT * FROM Matches WHERE Location = 'Stadium Name';
 
--- 99. Select the MatchNumber, DateUtc, HomeTeam, AwayTeam, and HomeTeamScore from the Matches table where the HomeTeamScore is greater than the AwayTeamScore.
+-- 99. Chọn cột MatchNumber, DateUtc, HomeTeam, AwayTeam và HomeTeamScore từ bảng Matches khi HomeTeamScore lớn hơn AwayTeamScore.
 SELECT MatchNumber, DateUtc, HomeTeam, AwayTeam, HomeTeamScore
 FROM Matches
 WHERE HomeTeamScore > AwayTeamScore;
 
--- 100. Select the ClubName, RankNumber, and TotalPoints from the ClubLeaderboard table where the TotalPoints is equal to the highest number of points.
+-- 100. Chọn cột ClubName, RankNumber và TotalPoints từ bảng ClubLeaderboard khi TotalPoints bằng số điểm cao nhất.
 SELECT ClubName, RankNumber, TotalPoints
 FROM ClubLeaderboard
 WHERE TotalPoints = (SELECT MAX(TotalPoints) FROM ClubLeaderboard);
